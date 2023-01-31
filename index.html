@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ru/RUS">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <title>Ko&Co</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <nav class="header__nav">
+                <li class="header__nav-item">
+                    <a href="#" class="header__nax-link">точки продаж</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nax-link">доставка</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nax-link">о нас</a>
+                </li>
+            </nav>
+            <img src="./pic/logo.png" alt="Ko&Co logo" class="header__nav-img">
+            <nav class="header__nav">
+                <li class="header__nav-item">
+                    <a href="#" class="header__nax-link">продукция</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="#" class="header__nax-link">войти</a>
+                </li>
+                <div class="header__social-link">
+                    <a href="#" class="header__social header__social--fav"><img src="./pic/insta.svg" alt="" class="header__nav-soc"></a>
+                    <a href="#" class="header__social"><img src="./pic/bag.svg" alt="" class="header__nav-soc"></a>
+                </div>
+            </nav>
+        </div>
+        <div class="header__promo">
+            <h1 class="header__title">
+                Магазин натуральных
+                <br>
+                <span class="header__title-italic">
+                    молочных продуктов
+                </span> <br> ручной работы
+            </h1>
+            <button class="promo__btn-delivery" type="button">Доставка по Москве и Мосвковской области</button>
+            <a class="promo__in-shop" href="#">теперь в магазинах</a>
+            <div class="promo__shops">
+                <img src="./pic/av.svg" alt="Изображение логотипа Азбуки вкуса" class="promo__shop-img">
+                <img src="./pic/ur.svg" alt="Изображение логотипа Усачевсеого рынка" class="promo__shop-img">
+                <img src="./pic/vv.svg" alt="Изображение логотипа ВкусВилла" class="promo__shop-img">
+            </div>
+
+            <a class="promo__button" type="button">Наш телеграм канал
+                <img class="promo__img" src="./pic/tg.png" alt="Логотип телеграма">
+            </a>
+            <a href="#" class="promo__inst">
+                <img src="./pic/instagram.svg" alt="" class="promo__instagram">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="new">
+            <div class="container">
+                <div class="new__inner">
+                    <div class="new__inner-info">
+                        <h2 class="new__title">
+                            Новые вкусы
+                        </h2>
+                        <div class="new__slider-pagin-n-arr">
+                            <div class="new__pagination">
+                                <span class="pagination__slash">
+                                <span id="currentPagination" class="pagination__current">01</span> /
+                                <span id="totalPagination">02</span>
+                                </span>
+                            </div>
+                            <div class="new__arrows">
+                                <button class="new__button new__button-prev">
+                                    <img src="./pic/previous.svg" alt="">
+                                    </button>
+                                <button class="new__button new__button-next">
+                                    <img src="./pic/next.svg" alt="">
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper">
+
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide new__item">
+                                <img src="./pic/сыр1.jpg" alt="Камамбер козий с белой плесенью" class="new__item-img">
+                                <img class="new__special" src="./pic/franch.svg" alt="">
+                                <div class="new__ditails">
+                                    <img src="./pic/vine1.svg" alt="" class="new__ditails-img">
+                                    <img src="./pic/vine2.svg" alt="" class="new__ditails-img">
+                                    <img src="./pic/food.svg" alt="" class="new__ditails-img">
+                                    <img src="./pic/grape.svg" alt="" class="new__ditails-img">
+                                </div>
+                                <h3 class="new__item-title">Камамбер козий</h3>
+                                <span class="new__item-desc">с белой плесенью</span>
+                            </div>
+                            <div class="swiper-slide new__item">
+                                <img src="./pic/сыр2.jpg" alt="Джем абрикосовый с кленовыми шишками" class="new__item-img">
+                                <h3 class="new__item-title">Джем абрикосовый</h3>
+                                <span class="new__item-desc">с кленовыми шишками</span>
+                            </div>
+                            <div class="swiper-slide new__item">
+                                <img src="./pic/сыр3.jpg" alt="Брюш козий с белой плесенью" class="new__item-img">
+                                <img class="new__special" src="./pic/russia.svg" alt="">
+                                <div class="new__ditails">
+                                    <img src="./pic/vine2.svg" alt="" class="new__ditails-img">
+                                    <img src="./pic/food.svg" alt="" class="new__ditails-img">
+                                    <img src="./pic/grape.svg" alt="" class="new__ditails-img">
+                                </div>
+                                <h3 class="new__item-title">Брюш козий</h3>
+                                <span class="new__item-desc">с белой плесенью</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <div class="container">
+                <h2 class="products__title">
+                    Продукция
+                </h2>
+                <div class="products__categories">
+                    <div class="categories__buttons">
+                        <button class="product__button" type="button">всё</button>
+                        <button class="product__button" type="button">свежие</button>
+                        <button class="product__button" type="button">мягкие</button>
+                        <button class="product__button" type="button">твердые</button>
+                        <button class="product__button" type="button">с белой плесенью</button>
+                        <button class="product__button" type="button">коровий</button>
+                        <button class="product__button product__button--last" type="button">с голубой плесенью</button>
+                        <button class="product__button product__button--last" type="button">козий</button>
+                    </div>
+                    <div class="categories__subcategories">
+                        <button type="button" class="subcategories__button">мягкие</button>
+                        <button type="button" class="subcategories__button">свежие</button>
+                        <button type="button" class="subcategories__button">свежие</button>
+                        <button type="button" class="subcategories__button">мягкие</button>
+                        <button type="button" class="subcategories__button">свежие</button>
+                        <button type="button" class="subcategories__button">свежие</button>
+                        <button type="button" class="subcategories__button">мягкие</button>
+                        <button type="button" class="subcategories__button">свежие</button>
+                        <button type="button" class="subcategories__button">свежие</button>
+                    </div>
+                </div>
+                <div class="products__inner">
+                    <div class="products__item">
+                        <div class="item__check">
+                            <div class="item__dot-and-info">
+                                <div class="check--dot check--dot-yes"></div>
+                                <span class="check check--yes">есть в наличии</span>
+                            </div>
+                            <div class="item__todo">
+                                <img class="item__for-user item__fav" src="./pic/like.svg" alt="В избранное" width="40" height="40">
+                                <img class="item__for-user item__to-bag" src="./pic/sale.svg" alt="В корзину" width="40" height="40">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="product__img product__img--kamamber" src="./pic/kamamber_goat.png" alt="Фото камамбера на козьем молоке">
+                            <h3 class="item__title">Камамбер козий</h3>
+                            <span class="item__categories">с белой плесенью</span>
+                            <span class="item__prise">320 руб.</span>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="item__check">
+                            <div class="item__dot-and-info">
+                                <div class="check--dot check--dot-yes"></div>
+                                <span class="check check--yes">есть в наличии</span>
+                            </div>
+                            <div class="item__todo">
+                                <img class="item__for-user item__fav" src="./pic/like.svg" alt="В избранное" width="40" height="40">
+                                <img class="item__for-user item__to-bag" src="./pic/sale.svg" alt="В корзину" width="40" height="40">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="product__img" src="./pic/kamamber_cow.png" alt="Фото камамбера на коровьем молоке">
+                            <h3 class="item__title">Камамбер коровий</h3>
+                            <span class="item__categories">с белой плесенью</span>
+                            <div class="item__for">
+                                <img src="./pic/vine01.svg" alt="К белому вину" class="item__for-img">
+                                <img src="./pic/food01.svg" alt="К еде" class="item__for-img">
+                                <img src="./pic/grape01.svg" alt="К фруктам" class="item__for-img">
+                            </div>
+                            <span class="item__weight">200 гр.</span>
+                            <span class="item__prise">320 руб.</span>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="item__dot-and-info">
+                            <div class="item__check">
+                                <div class="item__dot-and-info">
+                                    <div class="check--dot check--dot-yes"></div>
+                                    <span class="check check--yes">есть в наличии</span>
+                                </div>
+                                <div class="item__todo">
+                                    <img class="item__for-user item__fav" src="./pic/like.svg" alt="В избранное" width="40" height="40">
+                                    <img class="item__for-user item__to-bag" src="./pic/sale.svg" alt="В корзину" width="40" height="40">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="product__img" src="./pic/valanse1.png" alt="Фото Валансе на козьем молоке">
+                            <h3 class="item__title">Сыр Козий Валансе</h3>
+                            <span class="item__categories">с белой плесенью</span>
+                            <div class="item__for">
+                                <img src="./pic/vine01.svg" alt="К белому вину" class="item__for-img">
+                                <img src="./pic/food01.svg" alt="К еде" class="item__for-img">
+                                <img src="./pic/grape01.svg" alt="К фруктам" class="item__for-img">
+                            </div>
+                            <span class="item__weight">200 гр.</span>
+                            <span class="item__prise">650 руб.</span>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="item__dot-and-info">
+                            <div class="item__check">
+                                <div class="item__dot-and-info">
+                                    <div class="check--dot check--dot-yes"></div>
+                                    <span class="check check--yes">есть в наличии</span>
+                                </div>
+                                <div class="item__todo">
+                                    <img class="item__for-user item__fav" src="./pic/like.svg" alt="В избранное" width="40" height="40">
+                                    <img class="item__for-user item__to-bag" src="./pic/sale.svg" alt="В корзину" width="40" height="40">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="product__img" src="./pic/valanse2.png" alt="Фото Валансе на коровьем молоке">
+                            <h3 class="item__title">Сыр Коровий Валансе</h3>
+                            <span class="item__categories">с белой плесенью</span>
+                            <div class="item__for">
+                                <img src="./pic/vine01.svg" alt="К белому вину" class="item__for-img">
+                                <img src="./pic/food01.svg" alt="К еде" class="item__for-img">
+                                <img src="./pic/grape01.svg" alt="К фруктам" class="item__for-img">
+                            </div>
+                            <span class="item__weight">200 гр.</span>
+                            <span class="item__prise">500 руб.</span>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="item__dot-and-info">
+                            <div class="item__check">
+                                <div class="item__dot-and-info">
+                                    <div class="check--dot check--dot-yes"></div>
+                                    <span class="check check--yes">есть в наличии</span>
+                                </div>
+                                <div class="item__todo">
+                                    <img class="item__for-user item__fav" src="./pic/like.svg" alt="В избранное" width="40" height="40">
+                                    <img class="item__for-user item__to-bag" src="./pic/sale.svg" alt="В корзину" width="40" height="40">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img class="product__img" src="./pic/bush.png" alt="Фото Бюш де шевра">
+                            <h3 class="item__title">Бюш де шевр</h3>
+                            <span class="item__categories item__categories--none">с белой плесенью</span>
+                            <div class="item__for">
+                                <img src="./pic/vine01.svg" alt="К белому вину" class="item__for-img">
+                                <img src="./pic/food01.svg" alt="К еде" class="item__for-img">
+                                <img src="./pic/grape01.svg" alt="К фруктам" class="item__for-img">
+                            </div>
+                            <span class="item__weight">200 гр.</span>
+                            <span class="item__prise">500 руб.</span>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="item__dot-and-info">
+                            <div class="item__check">
+                                <div class="item__dot-and-info">
+                                    <div class="check--dot check--dot-yes"></div>
+                                    <span class="check check--yes">есть в наличии</span>
+                                </div>
+                                <div class="item__todo">
+                                    <img class="item__for-user item__fav" src="./pic/like.svg" alt="В избранное" width="40" height="40">
+                                    <img class="item__for-user item__to-bag" src="./pic/sale.svg" alt="В корзину" width="40" height="40">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img class="product__img" src="./pic/mozarella.png" alt="Фото моцареллы">
+                            <h3 class="item__title">Моцарелла</h3>
+                            <span class="item__categories item__categories--none">с белой плесенью</span>
+                            <div class="item__for">
+                                <img src="./pic/vine01.svg" alt="К белому вину" class="item__for-img">
+                                <img src="./pic/food01.svg" alt="К еде" class="item__for-img">
+                                <img src="./pic/grape01.svg" alt="К фруктам" class="item__for-img">
+                            </div>
+                            <span class="item__weight">200 гр.</span>
+                            <span class="item__prise">500 руб.</span>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="item__dot-and-info">
+                            <div class="item__check">
+                                <div class="item__dot-and-info">
+                                    <div class="check--dot check--dot-yes"></div>
+                                    <span class="check check--yes">есть в наличии</span>
+                                </div>
+                                <div class="item__todo">
+                                    <img class="item__for-user item__fav" src="./pic/like.svg" alt="В избранное" width="40" height="40">
+                                    <img class="item__for-user item__to-bag" src="./pic/sale.svg" alt="В корзину" width="40" height="40">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img class="product__img" src="./pic/buratta.png" alt="Фото буратты">
+                            <h3 class="item__title">Буратта</h3>
+                            <span class="item__categories item__categories--none">с белой плесенью</span>
+                            <div class="item__for">
+                                <img src="./pic/vine01.svg" alt="К белому вину" class="item__for-img">
+                                <img src="./pic/food01.svg" alt="К еде" class="item__for-img">
+                                <img src="./pic/grape01.svg" alt="К фруктам" class="item__for-img">
+                            </div>
+                            <span class="item__weight">200 гр.</span>
+                            <span class="item__prise">500 руб.</span>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <div class="item__dot-and-info">
+                            <div class="item__check">
+                                <div class="item__dot-and-info">
+                                    <div class="check--dot check--dot-yes"></div>
+                                    <span class="check check--yes">есть в наличии</span>
+                                </div>
+                                <div class="item__todo">
+                                    <img class="item__for-user item__fav" src="./pic/like.svg" alt="В избранное" width="40" height="40">
+                                    <img class="item__for-user item__to-bag" src="./pic/sale.svg" alt="В корзину" width="40" height="40">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img class="product__img" src="./pic/strachatella.png" alt="Фото страчателлы">
+                            <h3 class="item__title">Страчателла</h3>
+                            <span class="item__categories item__categories--none">с белой плесенью</span>
+                            <div class="item__for">
+                                <img src="./pic/vine01.svg" alt="К белому вину" class="item__for-img">
+                                <img src="./pic/food01.svg" alt="К еде" class="item__for-img">
+                                <img src="./pic/grape01.svg" alt="К фруктам" class="item__for-img">
+                            </div>
+                            <span class="item__weight">200 гр.</span>
+                            <span class="item__prise">500 руб.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="discount">
+            <div class="container">
+                <div class="discount__inner">
+                    <div class="discount__info">
+                        <p class="discount__sales">Скидка до</p>
+                        <span class="discount__num">10%</span>
+                        <p class="discount__text">на сыр <a href="#" class="discount__item">Валансе</a></p>
+                        <span class="discount__time">До 15.05.2021</span>
+                        <button class="discount__btn" type="button">посмотреть</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="recipe">
+            <div class="container">
+                <div class="recipe__inner">
+                    <div class="recipe__info">
+                        <h2 class="recipe__title">Рецепты
+                        </h2>
+                        <a href="#" class="slider__link">Посмотерть все</a>
+                        <div class="recipe__pag-n-arr">
+                            <div class="recipe__pag">
+                                <span class="pagination__slash">
+                                <span id="currentPag" class="pagination__current">1</span> /
+                                <span id="totalPag"></span>
+                                </span>
+                            </div>
+                            <div class="recipe__arrows">
+                                <button class=" recipe__button-left slick-prev">
+                                    <img src="./pic/previous.svg" alt="">
+                                    </button>
+                                <button class="recipe__button-right slick-next">
+                                    <img src="./pic/next.svg" alt="">
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recipe__slider recipe__mySlider">
+                        <div class="recipe__item">
+                            <img src="./pic/chese_souse.jpg" alt="Фото сырного соуса" class="recipe__item-img">
+                            <h3 class="recipe__item-title">Сырный соус</h3>
+                            <span class="recipe__text recipe__text-one">Мы признаем, что мы встречаемся и работаем на землях коренных народов по всей стране и <br> что суверенитет над этой землей никогда не <br> уступался. </span>
+                            <a href="#" class="recipe__link recipe__link--one">посмотреть</a>
+                        </div>
+                        <div class="recipe__item">
+                            <img src="./pic/snack.jpg" alt="Фото закусок с сырным соусом к ним" class="recipe__item-img">
+                            <h3 class="recipe__item-title">Французский сырный соус</h3>
+                            <span class="recipe__text recipe__text-two">Изумительный рецепт, который надо иметь в своей копилке. Подходит для любых быстрых закусок.</span>
+                            <a href="#" class="recipe__link recipe__link--two">посмотреть</a>
+                        </div>
+                        <div class="recipe__item">
+                            <img src="./pic/salad.jpg" alt="Фото сырного соуса" class="recipe__item-img">
+                            <h3 class="recipe__item-title">Салат и заправка из сыра с голубой плесенью</h3>
+                            <span class="recipe__text recipe__text-three">Этот салат – классическое американское блюдо, которое было придумано еще в 1920-х, и <br> практически повсеместно встречалось в меню <br> ресторанов до 1950-х.</span>
+                            <a href="#" class="recipe__link recipe__link--three">посмотреть</a>
+                        </div>
+                        <div class="recipe__item">
+                            <img src="./pic/chese_souse.jpg" alt="Фото сырного соуса" class="recipe__item-img">
+                            <h3 class="recipe__item-title">Сырный соус</h3>
+                            <span class="recipe__text recipe__text-one">Мы признаем, что мы встречаемся и работаем на землях коренных народов по всей стране и <br> что суверенитет над этой землей никогда не <br> уступался. </span>
+                            <a href="#" class="recipe__link recipe__link--one">посмотреть</a>
+                        </div>
+                        <div class="recipe__item">
+                            <img src="./pic/snack.jpg" alt="Фото закусок с сырным соусом к ним" class="recipe__item-img">
+                            <h3 class="recipe__item-title">Французский сырный соус</h3>
+                            <span class="recipe__text recipe__text-two">Изумительный рецепт, который надо иметь в своей копилке. Подходит для любых быстрых закусок.</span>
+                            <a href="#" class="recipe__link recipe__link--two">посмотреть</a>
+                        </div>
+                        <div class="recipe__item">
+                            <img src="./pic/salad.jpg" alt="Фото сырного соуса" class="recipe__item-img">
+                            <h3 class="recipe__item-title">Салат и заправка из сыра с голубой плесенью</h3>
+                            <span class="recipe__text recipe__text-three">Этот салат – классическое американское блюдо, которое было придумано еще в 1920-х, и <br> практически повсеместно встречалось в меню <br> ресторанов до 1950-х.</span>
+                            <a href="#" class="recipe__link recipe__link--three">посмотреть</a>
+                        </div>
+                        <div class="recipe__item">
+                            <img src="./pic/salad.jpg" alt="Фото сырного соуса" class="recipe__item-img">
+                            <h3 class="recipe__item-title">Салат и заправка из сыра с голубой плесенью</h3>
+                            <span class="recipe__text">Этот салат – классическое американское блюдо, которое было придумано еще в 1920-х, и практически повсеместно встречалось в меню ресторанов до 1950-х.</span>
+                            <a href="#" class="recipe__link recipe__link--two">посмотреть</a>
+                        </div>
+                        <div class="recipe__item">
+                            <img src="./pic/salad.jpg" alt="Фото сырного соуса" class="recipe__item-img">
+                            <h3 class="recipe__item-title">Салат и заправка из сыра с голубой плесенью</h3>
+                            <span class="recipe__text">Этот салат – классическое американское блюдо, которое было придумано еще в 1920-х, и практически повсеместно встречалось в меню ресторанов до 1950-х.</span>
+                            <a href="#" class="recipe__link recipe__link--two">посмотреть</a>
+                        </div>
+                        <div class="recipe__item">
+                            <img src="./pic/chese_souse.jpg" alt="Фото сырного соуса" class="recipe__item-img">
+                            <h3 class="recipe__item-title">Сырный соус</h3>
+                            <span class="recipe__text recipe__text-one">Мы признаем, что мы встречаемся и работаем на землях коренных народов по всей стране и <br> что суверенитет над этой землей никогда не <br> уступался. </span>
+                            <a href="#" class="recipe__link recipe__link--one">посмотреть</a>
+                        </div>
+                        <div class="recipe__item">
+                            <img src="./pic/snack.jpg" alt="Фото закусок с сырным соусом к ним" class="recipe__item-img">
+                            <h3 class="recipe__item-title">Французский сырный соус</h3>
+                            <span class="recipe__text recipe__text-two">Изумительный рецепт, который надо иметь в своей копилке. Подходит для любых быстрых закусок.</span>
+                            <a href="#" class="recipe__link recipe__link--two">посмотреть</a>
+                        </div>
+                        <div class="recipe__item recipe__item-tree">
+                            <img src="./pic/salad.jpg" alt="Фото сырного соуса" class="recipe__item-img">
+                            <h3 class="recipe__item-title">Салат и заправка из сыра с голубой плесенью</h3>
+                            <span class="recipe__text recipe__text-three">Этот салат – классическое американское блюдо, которое было придумано еще в 1920-х, и <br> практически повсеместно встречалось в меню <br> ресторанов до 1950-х.</span>
+                            <a href="#" class="recipe__link recipe__link--three">посмотреть</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="social">
+            <div class="social__link">
+                <span class="insta">InStagram</span>
+                <a href="#" class="soc__link">Подписаться на нас</a>
+            </div>
+            <div class="instagram__photo">
+                <img src="./pic/instag1.jpg" alt="Пост истаграма компании" class="photo__img">
+                <img src="./pic/intag2.jpg" alt="Пост истаграма компании" class="photo__img">
+                <img src="./pic/instag1.jpg" alt="Пост истаграма компании" class="photo__img">
+                <img src="./pic/intag4.svg" alt="Пост истаграма компании" class="photo__img photo__img-four">
+                <img src="./pic/Rectangle.svg" alt="" class="decor">
+            </div>
+        </section>
+    </main>
+    <!-- <footer class="footer">
+        <div class="foooter__top">
+            <div class="footer__links">
+                <a href="#" class="footer__link footer__link--inst">Istagram</a>
+                <a href="#" class="footer__link">Telegram</a>
+            </div>
+            <div class="contacts">
+                <a class="contacts__phone" href="tel:+78002505824">8 (800) 250-58-24
+                </a>
+                <span class="contacts__adress">Смоленская область, Кардымовский район, село Каменка <br>
+                    ООО "Красная горка", ОГРН 1136733008763, ИНН 6722041039
+                    </span>
+            </div>
+            <div class="email">
+                <a class="mail" href="mailto:sales@koico.ru">sales@koico.ru</a>
+                <a href="#" class="email__text">написать нам</a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <img class="footer__logo" src="./pic/footer__logo.png" alt="Логотип компании" width="77" height="30">
+            <p class="footer__text">© Pty Ltd and Wild Game Resources <br> Australia Pty Ltd <br> Terms & Conditions</p>
+        </div>
+    </footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,860 @@
+                    @font-face {
+                        font-family: Anglecia Pro Display;
+                        src: url(./fonts/angleciadisplay/AngleciaProDisplay-Regular.otf) format(otf), url(./fonts/angleciadisplay/AngleciaProDisplay-Italic.otf) format(otf);
+                    }
+                    
+                    @font-face {
+                        font-family: DIN Pro;
+                        src: url(/fonts/DINPro/dinpro_medium.otf) format(otf), url(/fonts/DINPro/dinpro.otf) format(otf);
+                    }
+                    
+                    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Roboto:wght@400;500&display=swap');
+                    *,
+                    *::after,
+                    *::before {
+                        box-sizing: border-box;
+                    }
+                    
+                    body {
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 14px;
+                        font-weight: 400;
+                        margin: 0 auto;
+                        line-height: 22px;
+                        background-color: #E5E5E5;
+                    }
+                    
+                    .container {
+                        max-width: 1440px;
+                        margin: 0 auto;
+                        padding: 0 35px;
+                    }
+                    
+                    a {
+                        text-decoration: none;
+                        color: inherit;
+                    }
+                    
+                    li {
+                        list-style: none;
+                    }
+                    
+                    .header {
+                        background-image: url(/pic/header__bg.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        color: #fff;
+                        height: 100vh;
+                        margin-bottom: 120px;
+                    }
+                    
+                    .header__inner {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 30px 20px;
+                    }
+                    
+                    .header__nav {
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 0 30px;
+                        align-items: center;
+                        text-transform: uppercase;
+                        padding-top: 22px;
+                    }
+                    
+                    .header__social-link {
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 0 15px;
+                    }
+                    
+                    .header__promo {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    
+                    .header__title {
+                        text-align: center;
+                        font-family: 'Playfair Display';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 72px;
+                        line-height: 1;
+                        position: relative;
+                    }
+                    
+                    .header__title-italic {
+                        font-style: italic;
+                    }
+                    
+                    .promo__btn-delivery,
+                    .promo__in-shop,
+                    .promo__shops,
+                    .promo__inst {
+                        display: none;
+                    }
+                    
+                    .promo__button {
+                        border: 0.847328px solid #FFF3E7;
+                        background: transparent;
+                        border-radius: 70px;
+                        color: #FFF3E7;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding-left: 30px;
+                        font-size: 18px;
+                        position: absolute;
+                        bottom: 65px;
+                        left: 928px;
+                    }
+                    
+                    .promo__img {
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        padding-left: 20px;
+                    }
+                    
+                    .new {
+                        font-family: Playfair Display;
+                        margin-bottom: 45px;
+                    }
+                    
+                    .new__pagination {
+                        font-family: Anglecia Pro Display;
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 24px;
+                        letter-spacing: -0.01em;
+                        color: black;
+                    }
+                    
+                    .new__title {
+                        margin-bottom: 50px;
+                        font-weight: 400;
+                        font-size: 36px;
+                        line-height: 40px;
+                    }
+                    
+                    .new__item {
+                        position: relative;
+                        flex-basis: 417px;
+                    }
+                    
+                    .new__item-desc {
+                        font-style: italic;
+                    }
+                    
+                    .new__ditails {
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 0 10px;
+                        position: absolute;
+                        top: 520px;
+                        left: 15px;
+                    }
+                    
+                    .new__special {
+                        position: absolute;
+                        top: 25px;
+                        left: 295px;
+                    }
+                    
+                    .new__button {
+                        border: none;
+                        height: 60px;
+                        width: 60px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                    }
+                    
+                    .new__inner-info {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                    
+                    .new__slider-pagin-n-arr {
+                        display: flex;
+                        align-items: center;
+                        flex-basis: 300px;
+                    }
+                    
+                    .new-pagination {
+                        display: flex;
+                        flex-basis: 130px;
+                        gap: 0 10px;
+                        align-items: center;
+                        margin-right: 100px;
+                    }
+                    
+                    .pagination__slash {
+                        color: #AEAEAE;
+                    }
+                    
+                    .pagination__current {
+                        color: #184240;
+                    }
+                    
+                    .new__arrows {
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 0 10px;
+                        align-items: center;
+                    }
+                    
+                    .new__item-title {
+                        font-weight: 400;
+                        font-size: 24px;
+                        margin-bottom: 10px;
+                    }
+                    
+                    .products__title {
+                        font-family: 'Playfair Display';
+                        font-weight: 400;
+                        font-size: 36px;
+                        text-align: center;
+                        margin-bottom: 38px;
+                    }
+                    
+                    .categories__buttons {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 0 10px;
+                        max-width: 1047px;
+                        margin-left: 150px;
+                    }
+                    
+                    .product__button,
+                    .subcategories__button {
+                        text-transform: uppercase;
+                        font-family: Roboto;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 40px;
+                        color: #184240;
+                    }
+                    
+                    .categories__buttons {
+                        padding-bottom: 15px;
+                        border-bottom: rgba(24, 66, 64, 0.3) 1px solid;
+                    }
+                    
+                    .product__button {
+                        padding: 0 20px;
+                        background: none;
+                        border: #184240 1px solid;
+                        border-radius: 15px;
+                        cursor: pointer;
+                    }
+                    
+                    .categories__subcategories {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 15px;
+                        margin-top: 15px;
+                    }
+                    
+                    .subcategories__button {
+                        background: none;
+                        border: none;
+                    }
+                    
+                    .subcategories__button:hover {
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                    
+                    .products__inner {
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        margin-bottom: 120px;
+                    }
+                    
+                    .products__item {
+                        border: 1px solid #C1C1C1;
+                        min-height: 400px;
+                        padding-bottom: 15px;
+                    }
+                    
+                    .item__check {
+                        margin-left: 15px;
+                        padding-top: 20px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                    
+                    .item__fav {
+                        left: 212px;
+                    }
+                    
+                    .product__img {
+                        object-position: center;
+                        width: 200;
+                        max-height: 160;
+                    }
+                    
+                    .check--dot {
+                        width: 14px;
+                        height: 14px;
+                        border: none;
+                        border-radius: 50%;
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
+                    
+                    .check {
+                        line-height: 22px;
+                    }
+                    
+                    .check--dot-yes {
+                        background-color: #B2E08D;
+                    }
+                    
+                    .check--dot-no {
+                        background-color: #FF867C;
+                    }
+                    
+                    .item__todo {
+                        display: flex;
+                        justify-content: center;
+                        gap: 0 15px;
+                        margin-right: 15px;
+                    }
+                    
+                    .item {
+                        flex-direction: column;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    
+                    .item__title {
+                        text-align: center;
+                        font-family: 'Playfair Display';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 24px;
+                        margin-bottom: 8px;
+                    }
+                    
+                    .item__categories {
+                        display: block;
+                        font-family: 'Playfair Display';
+                        font-style: italic;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 22px;
+                        text-align: center;
+                        margin-bottom: 13px;
+                    }
+                    
+                    .item__prise {
+                        font-family: 'Anglecia Pro Display';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 40px;
+                    }
+                    
+                    .item__for {
+                        gap: 0 20px;
+                        margin-bottom: 10px;
+                    }
+                    
+                    .item__categories--none {
+                        visibility: hidden;
+                    }
+                    
+                    .item__weight {
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: rgba(24, 66, 64, 0.4);
+                    }
+                    
+                    .product__img--kamamber {
+                        margin-bottom: 10px;
+                        margin-top: 20px;
+                    }
+                    
+                    .discount__inner {
+                        background-image: url(../pic/cheeeeese.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        height: 560px;
+                        width: 100%;
+                        margin-bottom: 83px;
+                    }
+                    
+                    .discount__info {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        max-width: 461px;
+                        height: 100%;
+                        background: rgba(24, 66, 64, 0.9);
+                        color: #FAEEE2;
+                    }
+                    
+                    .discount__sales {
+                        font-family: 'Playfair Display';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 22px;
+                        margin-bottom: 100px;
+                    }
+                    
+                    .discount__num {
+                        font-family: 'Anglecia Pro Display';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 144px;
+                        line-height: 40px;
+                        margin-bottom: 75px;
+                    }
+                    
+                    .discount__text {
+                        font-family: 'Playfair Display';
+                        font-style: italic;
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 22px;
+                        margin-bottom: 35px;
+                    }
+                    
+                    .discount__item {
+                        font-style: normal;
+                        text-decoration-line: underline;
+                        text-decoration-thickness: 1px;
+                        cursor: pointer;
+                    }
+                    
+                    .discount__time {
+                        margin-bottom: 46px;
+                    }
+                    
+                    .discount__btn {
+                        width: 286px;
+                        height: 64px;
+                        font-size: 18px;
+                        line-height: 22px;
+                        border: 1px solid #FFE7CF;
+                        border-radius: 36px;
+                        background: transparent;
+                        text-transform: uppercase;
+                        color: #FFE7CF;
+                        margin-bottom: 59px;
+                    }
+                    
+                    .slider__link {
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 16px;
+                        cursor: pointer;
+                        text-decoration-line: underline;
+                        text-decoration-thickness: 1px;
+                        letter-spacing: 0.02em;
+                    }
+                    
+                    .recipe {
+                        margin-bottom: 117px;
+                    }
+                    
+                    .recipe__slider {
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 20px;
+                    }
+                    
+                    .recipe__title {
+                        font-family: 'Playfair Display';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 36px;
+                        line-height: 110.69%;
+                    }
+                    
+                    .recipe__text {
+                        color: rgba(141, 154, 154, 1);
+                        font-style: normal;
+                        width: 300px;
+                    }
+                    
+                    .recipe__link {
+                        display: block;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 16px;
+                        letter-spacing: 0.02em;
+                        text-decoration-line: underline;
+                        text-transform: uppercase;
+                    }
+                    
+                    .recipe__text-one {
+                        margin-bottom: 65px;
+                    }
+                    
+                    .recipe__text-two {
+                        margin-bottom: 85px;
+                    }
+                    
+                    .recipe__text-three {
+                        margin-bottom: 40px;
+                    }
+                    
+                    .recipe__info {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                    
+                    .recipe__pag-n-arr {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 26px;
+                    }
+                    
+                    .recipe__pag {
+                        margin-right: 70px;
+                        font-family: 'Anglecia Pro Display';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 40px;
+                    }
+                    
+                    .recipe__arrows {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 0 12px;
+                        margin-right: 35px;
+                    }
+                    
+                    .recipe__button-left,
+                    .recipe__button-right {
+                        border: none;
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 50%;
+                    }
+                    
+                    .recipe__mySlider {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 20px;
+                    }
+                    
+                    .recipe__item {
+                        width: 420px;
+                        max-height: 550px;
+                        padding-bottom: 50px;
+                    }
+                    
+                    .recipe__item-tree {
+                        width: 304px;
+                    }
+                    
+                    .recipe__text {
+                        display: block;
+                        width: 80%;
+                    }
+                    
+                    .social__link {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        border-bottom: 1px solid rgba(24, 66, 64, 0.3);
+                    }
+                    
+                    .insta {
+                        font-family: 'Playfair Display';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 36px;
+                        line-height: 40px;
+                        text-transform: uppercase;
+                        letter-spacing: 0.02em;
+                        color: #184240;
+                        margin-bottom: 30px;
+                    }
+                    
+                    .social {
+                        border-top: 1px solid rgba(24, 66, 64, 0.3);
+                        padding-top: 117px;
+                    }
+                    
+                    .soc__link {
+                        letter-spacing: 0.02em;
+                        text-decoration-line: underline;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 16px;
+                        color: #184240;
+                        margin-bottom: 120px;
+                    }
+                    
+                    .instagram__photo {
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        gap: 9px;
+                        max-width: 1310px;
+                        margin-top: 35px;
+                        padding-bottom: 31px;
+                        border-bottom: 1px solid rgba(24, 66, 64, 0.3);
+                    }
+                    
+                    .decor {
+                        position: absolute;
+                        bottom: 148px;
+                        left: 0px;
+                    }
+                    
+                    .footer {
+                        margin-top: 191px;
+                        background-color: #184240;
+                        color: rgba(250, 238, 226, 1);
+                    }
+                    
+                    .foooter__top {
+                        padding-top: 105px;
+                        padding-bottom: 100px;
+                        border-bottom: 1px solid #FAEEE2;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                    
+                    .footer__link {
+                        display: block;
+                        font-family: 'Playfair Display';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 36px;
+                        margin-left: 70px;
+                    }
+                    
+                    .footer__link--inst {
+                        margin-bottom: 50px;
+                    }
+                    
+                    .contacts__phone {
+                        display: block;
+                        text-align: center;
+                        font-family: 'Anglecia Pro Display';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 36px;
+                        line-height: 40px;
+                        margin-bottom: 30px;
+                    }
+                    
+                    .contacts__adress {
+                        width: 460px;
+                        display: inline-block;
+                        text-align: center;
+                    }
+                    
+                    .email {
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+                        flex-direction: column;
+                        margin-right: 70px;
+                    }
+                    
+                    .mail {
+                        font-family: 'Playfair Display';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 36px;
+                        padding-bottom: 50px;
+                    }
+                    
+                    .email__text {
+                        text-decoration-line: underline;
+                        text-transform: uppercase;
+                    }
+                    
+                    .footer__bottom {
+                        margin-top: 36px;
+                        padding-bottom: 100px;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    
+                    .footer__logo {
+                        margin-left: 70px;
+                    }
+                    
+                    .footer__text {
+                        display: block;
+                        width: 245px;
+                        text-align: center;
+                        margin-left: 70px;
+                    }
+                    
+                    @media screen and (max-width:1300px) {
+                        .promo__button,
+                        .promo__img {
+                            display: none;
+                        }
+                        .decor {
+                            none;
+                        }
+                    }
+                    
+                    @media screen and (max-width: 1257px) {
+                        .header {
+                            background-image: url(/pic/header__bg.jpg);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center;
+                            color: #fff;
+                            height: 900px;
+                        }
+                        .promo__btn-delivery {
+                            margin-top: 40px;
+                        }
+                        .header__title,
+                        .header__title-italic {
+                            font-size: 64px;
+                        }
+                        .header__social--fav,
+                        .promo__button {
+                            display: none;
+                        }
+                        .header__promo {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .promo__btn-delivery,
+                        .promo__in-shop,
+                        .promo__shops {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        .promo__btn-delivery {
+                            margin-top: 50px;
+                            background-color: transparent;
+                            border: 0.847328px solid #FFF3E7;
+                            border-radius: 70px;
+                            line-height: 17px;
+                            font-weight: 400;
+                            font-size: 14px;
+                            width: 400px;
+                            height: 43px;
+                            color: #FFF3E7;
+                            letter-spacing: -0.01em;
+                            padding-top: 13px;
+                            padding-left: 50px;
+                            margin-bottom: 77px;
+                        }
+                        .promo__in-shop {
+                            font-family: DIN Pro;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                            margin-bottom: 47px;
+                        }
+                        .promo__shops {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 0 60px;
+                        }
+                        .promo__inst {
+                            display: block;
+                            position: absolute;
+                            right: 70px;
+                            top: 648px;
+                        }
+                        .header__promo {
+                            position: relative;
+                        }
+                        .header__title {
+                            font-size: 64px;
+                            line-height: 70px;
+                        }
+                        .swiper-wrapper {
+                            width: 100%;
+                        }
+                        .categories__subcategories {
+                            display: none;
+                        }
+                        .categories__buttons {
+                            font-size: 14px;
+                            display: inline-block;
+                            text-align: center;
+                        }
+                        .product__button--last {
+                            margin-top: 26px;
+                        }
+                        .products__inner {
+                            grid-template-columns: repeat(3, 1fr);
+                        }
+                        .categories__buttons {
+                            margin-left: 100px;
+                        }
+                        .decor {
+                            display: none;
+                        }
+                    }
+                    
+                    @media screen and (max-width: 880px) {
+                        .header__nax-link {
+                            font-size: 12px;
+                            line-height: 14px;
+                        }
+                        .products__inner {
+                            grid-template-columns: repeat(2, 1fr);
+                        }
+                        .categories__buttons {
+                            margin-left: 50px;
+                        }
+                        .discount__info {
+                            min-width: 100%;
+                        }
+                        .discount__inner {
+                            background-image: url(/pic/bgg.jpg);
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+                        .recipe__item {
+                            width: 100%;
+                        }
+                        .recipe__text {
+                            width: 70%;
+                            max-width: 345px;
+                        }
+                        .slider__link {
+                            display: none;
+                        }
+                        .recipe__arrows {
+                            width: 100%;
+                        }
+                        .photo__img-four {
+                            display: none;
+                        }
+                    }
