@@ -39,6 +39,7 @@ const swiper = new Swiper('.swiper', {
 
 
 
+
 const slider = $('.recipe__slider');
 
 slider.on('init', function(event, slick, direction) {
