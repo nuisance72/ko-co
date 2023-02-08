@@ -15,6 +15,10 @@
                         box-sizing: border-box;
                     }
                     
+                    button {
+                        cursor: pointer;
+                    }
+                    
                     body {
                         font-family: 'Roboto', sans-serif;
                         font-size: 14px;
@@ -63,6 +67,10 @@
                         align-items: center;
                         text-transform: uppercase;
                         padding-top: 22px;
+                    }
+                    
+                    .header__social-mob {
+                        display: none;
                     }
                     
                     .header__social-link {
@@ -116,6 +124,18 @@
                         padding-top: 10px;
                         padding-bottom: 10px;
                         padding-left: 20px;
+                    }
+                    
+                    .menu__mobile {
+                        display: none;
+                    }
+                    
+                    .promo__slogan {
+                        display: none;
+                    }
+                    
+                    .title__mobile {
+                        display: none;
                     }
                     
                     .new {
@@ -206,6 +226,7 @@
                         justify-content: space-between;
                         gap: 0 10px;
                         align-items: center;
+                        position: relative;
                     }
                     
                     .new__item-title {
@@ -254,6 +275,10 @@
                         cursor: pointer;
                     }
                     
+                    .header__menu-mob {
+                        display: none;
+                    }
+                    
                     .categories__subcategories {
                         display: flex;
                         justify-content: center;
@@ -276,6 +301,10 @@
                         display: grid;
                         grid-template-columns: repeat(4, 1fr);
                         margin-bottom: 120px;
+                    }
+                    
+                    .products__types {
+                        display: none;
                     }
                     
                     .products__item {
@@ -331,6 +360,16 @@
                         margin-right: 15px;
                     }
                     
+                    .todo__btn {
+                        border: none;
+                        background: transparent;
+                        cursor: pointer;
+                    }
+                    
+                    .more {
+                        display: none;
+                    }
+                    
                     .item {
                         flex-direction: column;
                         display: flex;
@@ -345,6 +384,10 @@
                         font-weight: 400;
                         font-size: 24px;
                         margin-bottom: 8px;
+                    }
+                    
+                    .products__item-for-adap {
+                        display: none;
                     }
                     
                     .item__categories {
@@ -490,6 +533,7 @@
                         color: rgba(141, 154, 154, 1);
                         font-style: normal;
                         width: 300px;
+                        margin-bottom: 20px;
                     }
                     
                     .recipe__link {
@@ -503,7 +547,7 @@
                     }
                     
                     .recipe__text-one {
-                        margin-bottom: 65px;
+                        margin-bottom: 20px;
                     }
                     
                     .recipe__text-two {
@@ -534,6 +578,7 @@
                         font-weight: 400;
                         font-size: 24px;
                         line-height: 40px;
+                        flex-wrap: nowrap;
                     }
                     
                     .recipe__arrows {
@@ -611,13 +656,11 @@
                     }
                     
                     .instagram__photo {
-                        position: relative;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         flex-wrap: wrap;
                         gap: 9px;
-                        max-width: 1310px;
                         margin-top: 35px;
                         padding-bottom: 31px;
                         border-bottom: 1px solid rgba(24, 66, 64, 0.3);
@@ -727,7 +770,7 @@
                         }
                     }
                     
-                    @media screen and (max-width: 1257px) {
+                    @media screen and (max-width: 1200px) {
                         .header {
                             background-image: url(/pic/header__bg.jpg);
                             background-repeat: no-repeat;
@@ -751,6 +794,58 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                        }
+                        .new {
+                            margin-bottom: 181px;
+                            position: relative;
+                        }
+                        .new__slider-pagin-n-arr {
+                            position: absolute;
+                            width: 100%;
+                            top: 810px;
+                        }
+                        .categories__buttons {
+                            margin-top: 50px;
+                        }
+                        .products__title {
+                            display: none;
+                        }
+                        .products__types {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 0 50px;
+                            border-bottom: 1px solid rgba(24, 66, 64, 0.3);
+                        }
+                        .product__type {
+                            font-family: 'Playfair Display';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 36px;
+                            line-height: 40px;
+                            color: #184240;
+                            letter-spacing: 0.02em;
+                            text-transform: uppercase;
+                            border: none;
+                            background: transparent;
+                        }
+                        .products__item-for-adap {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        .more {
+                            display: inline-block;
+                            color: #184240;
+                            text-decoration: underline;
+                            border: none;
+                            background: transparent;
+                            text-transform: uppercase;
+                            text-align: center;
+                            width: 100%;
+                            margin-bottom: 80px;
+                            cursor: pointer;
                         }
                         .promo__btn-delivery,
                         .promo__in-shop,
@@ -791,7 +886,7 @@
                             display: block;
                             position: absolute;
                             right: 70px;
-                            top: 648px;
+                            top: 530px;
                         }
                         .header__promo {
                             position: relative;
@@ -820,8 +915,15 @@
                         .categories__buttons {
                             margin-left: 100px;
                         }
-                        .decor {
-                            display: none;
+                        .recipe {
+                            position: relative;
+                        }
+                        .recipe__pag-n-arr {
+                            position: absolute;
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+                            top: 770px;
                         }
                         .foooter__top {
                             display: none;
@@ -890,7 +992,7 @@
                     }
                     
                     @media screen and (max-width: 880px) {
-                        .header__nax-link {
+                        .header__nav-link {
                             font-size: 12px;
                             line-height: 14px;
                         }
@@ -927,5 +1029,63 @@
                         }
                         .top-adaptive__links {
                             grid-template-columns: repeat(1, 1fr);
+                        }
+                        .item__for-adap {
+                            display: none;
+                        }
+                    }
+                    
+                    @media screen and (max-width: 375px) {
+                        .header__inner {
+                            border-bottom: 1px solid rgba(255, 243, 231, 0.3);
+                            margin-left: 20px;
+                            width: 335px;
+                            padding: 20px 0;
+                        }
+                        .menu__mobile-one {
+                            display: flex;
+                            flex-direction: column;
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            justify-content: space-around;
+                            background-color: rgba(255, 255, 255, 0.22);
+                            border: none;
+                            padding: 15px;
+                            cursor: pointer;
+                        }
+                        .header__menu-mob span {
+                            width: 13px;
+                            height: 1px;
+                            background-color: #fff;
+                        }
+                        .header__nav {
+                            display: none;
+                        }
+                        .menu__mobile-info.menu--open {
+                            display: flex;
+                            flex-direction: column;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background-color: rgba(24, 66, 64, 1);
+                            align-items: center;
+                            z-index: 5;
+                        }
+                        .header__social-mob {
+                            display: flex;
+                        }
+                        .header__menu-mob,
+                        .header__nav-img,
+                        .header__social-mob {
+                            z-index: 10;
+                        }
+                        .header__promo {
+                            display: none;
+                        }
+                        .promo__button {
+                            display: block;
                         }
                     }

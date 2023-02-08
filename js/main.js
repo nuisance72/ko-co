@@ -4,6 +4,8 @@ const swiper = new Swiper('.swiper', {
 
     loop: true,
     slidesPerView: 2,
+    spaceBetween: 20,
+    variableWidth: true,
     breakpoints: {
 
         830: {
@@ -15,24 +17,21 @@ const swiper = new Swiper('.swiper', {
             spaceBetween: 10,
         }
     },
-    spaceBetween: 20,
-    variableWidth: true,
     navigation: {
         nextEl: '.new__button-next',
         prevEl: '.new__button-prev',
     },
     pagination: {
         el: '.new__pagination',
-        clickable: true,
         type: 'custom',
         renderCustom: function(swiper, current, total) {
-            const currentPage = document.querySelector('#currentPagination');
-            const totalPage = document.querySelector('#totalPagination');
-            currentPage.innerHTML = current >= 10 ? current : '0' + current;
-            totalPage.innerHTML = total >= 10 ? total : '0' + total;
-
+            const currentPage = current >= 10 ? current : '0' + current;
+            const totalPage = total >= 10 ? total : '0' + total
+            return `${currentPage} / ${totalPage}`;
         },
     }
+
+
 });
 
 
@@ -60,4 +59,13 @@ slider.slick({
 slider.on('afterChange', function(event, slick) {
     const currentSlide = Math.ceil(slick.currentSlide / slick.options.slidesToShow) + 1;
     document.querySelector('#currentPag').innerHTML = currentSlide;
+});
+
+
+
+const menuBtn = document.querySelector('.header__menu-mob');
+const menuMobile = document.querySelector('.menu__mobile-info');
+
+menuBtn.addEventListener('click', () => {
+    menuMobile.classList.toggle('menu--open');
 });
