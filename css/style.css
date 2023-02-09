@@ -1,1091 +1,1259 @@
-                    @font-face {
-                        font-family: Anglecia Pro Display;
-                        src: url(./fonts/angleciadisplay/AngleciaProDisplay-Regular.otf) format(otf), url(./fonts/angleciadisplay/AngleciaProDisplay-Italic.otf) format(otf);
-                    }
-                    
-                    @font-face {
-                        font-family: DIN Pro;
-                        src: url(/fonts/DINPro/dinpro_medium.otf) format(otf), url(/fonts/DINPro/dinpro.otf) format(otf);
-                    }
-                    
-                    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Roboto:wght@400;500&display=swap');
-                    *,
-                    *::after,
-                    *::before {
-                        box-sizing: border-box;
-                    }
-                    
-                    button {
-                        cursor: pointer;
-                    }
-                    
-                    body {
-                        font-family: 'Roboto', sans-serif;
-                        font-size: 14px;
-                        font-weight: 400;
-                        margin: 0 auto;
-                        line-height: 22px;
-                        background-color: #E5E5E5;
-                    }
-                    
-                    .container {
-                        max-width: 1440px;
-                        margin: 0 auto;
-                        padding: 0 35px;
-                    }
-                    
-                    a {
-                        text-decoration: none;
-                        color: inherit;
-                    }
-                    
-                    li {
-                        list-style: none;
-                    }
-                    
-                    .header {
-                        background-image: url(/pic/header__bg.jpg);
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        background-position: center;
-                        color: #fff;
-                        height: 100vh;
-                        margin-bottom: 120px;
-                    }
-                    
-                    .header__inner {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        padding: 30px 20px;
-                    }
-                    
-                    .header__nav {
-                        display: flex;
-                        justify-content: space-between;
-                        gap: 0 30px;
-                        align-items: center;
-                        text-transform: uppercase;
-                        padding-top: 22px;
-                    }
-                    
-                    .header__social-mob {
-                        display: none;
-                    }
-                    
-                    .header__social-link {
-                        display: flex;
-                        justify-content: space-between;
-                        gap: 0 15px;
-                    }
-                    
-                    .header__promo {
-                        display: flex;
-                        flex-direction: column;
-                    }
-                    
-                    .header__title {
-                        text-align: center;
-                        font-family: 'Playfair Display';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 72px;
-                        line-height: 1;
-                        position: relative;
-                    }
-                    
-                    .header__title-italic {
-                        font-style: italic;
-                    }
-                    
-                    .promo__btn-delivery,
-                    .promo__in-shop,
-                    .promo__shops,
-                    .promo__inst {
-                        display: none;
-                    }
-                    
-                    .promo__button {
-                        border: 0.847328px solid #FFF3E7;
-                        background: transparent;
-                        border-radius: 70px;
-                        color: #FFF3E7;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        padding-left: 30px;
-                        font-size: 18px;
-                        position: absolute;
-                        bottom: 65px;
-                        left: 928px;
-                    }
-                    
-                    .promo__img {
-                        padding-top: 10px;
-                        padding-bottom: 10px;
-                        padding-left: 20px;
-                    }
-                    
-                    .menu__mobile {
-                        display: none;
-                    }
-                    
-                    .promo__slogan {
-                        display: none;
-                    }
-                    
-                    .title__mobile {
-                        display: none;
-                    }
-                    
-                    .new {
-                        font-family: Playfair Display;
-                        margin-bottom: 45px;
-                    }
-                    
-                    .new__pagination {
-                        font-family: Anglecia Pro Display;
-                        font-weight: 400;
-                        font-size: 24px;
-                        line-height: 24px;
-                        letter-spacing: -0.01em;
-                        color: black;
-                    }
-                    
-                    .new__title {
-                        margin-bottom: 50px;
-                        font-weight: 400;
-                        font-size: 36px;
-                        line-height: 40px;
-                    }
-                    
-                    .new__item {
-                        position: relative;
-                        flex-basis: 417px;
-                    }
-                    
-                    .new__item-desc {
-                        font-style: italic;
-                    }
-                    
-                    .new__ditails {
-                        display: flex;
-                        justify-content: space-between;
-                        gap: 0 10px;
-                        position: absolute;
-                        top: 520px;
-                        left: 15px;
-                    }
-                    
-                    .new__special {
-                        position: absolute;
-                        top: 25px;
-                        left: 295px;
-                    }
-                    
-                    .new__button {
-                        border: none;
-                        height: 60px;
-                        width: 60px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        border-radius: 50%;
-                    }
-                    
-                    .new__inner-info {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    
-                    .new__slider-pagin-n-arr {
-                        display: flex;
-                        align-items: center;
-                        flex-basis: 300px;
-                    }
-                    
-                    .new-pagination {
-                        display: flex;
-                        flex-basis: 130px;
-                        gap: 0 10px;
-                        align-items: center;
-                        margin-right: 100px;
-                    }
-                    
-                    .pagination__slash {
-                        color: #AEAEAE;
-                    }
-                    
-                    .pagination__current {
-                        color: #184240;
-                    }
-                    
-                    .new__arrows {
-                        display: flex;
-                        justify-content: space-between;
-                        gap: 0 10px;
-                        align-items: center;
-                        position: relative;
-                    }
-                    
-                    .new__item-title {
-                        font-weight: 400;
-                        font-size: 24px;
-                        margin-bottom: 10px;
-                    }
-                    
-                    .products__title {
-                        font-family: 'Playfair Display';
-                        font-weight: 400;
-                        font-size: 36px;
-                        text-align: center;
-                        margin-bottom: 38px;
-                    }
-                    
-                    .categories__buttons {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 0 10px;
-                        max-width: 1047px;
-                        margin-left: 150px;
-                    }
-                    
-                    .product__button,
-                    .subcategories__button {
-                        text-transform: uppercase;
-                        font-family: Roboto;
-                        font-weight: 400;
-                        font-size: 14px;
-                        line-height: 40px;
-                        color: #184240;
-                    }
-                    
-                    .categories__buttons {
-                        padding-bottom: 15px;
-                        border-bottom: rgba(24, 66, 64, 0.3) 1px solid;
-                    }
-                    
-                    .product__button {
-                        padding: 0 20px;
-                        background: none;
-                        border: #184240 1px solid;
-                        border-radius: 15px;
-                        cursor: pointer;
-                    }
-                    
-                    .header__menu-mob {
-                        display: none;
-                    }
-                    
-                    .categories__subcategories {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 15px;
-                        margin-top: 15px;
-                    }
-                    
-                    .subcategories__button {
-                        background: none;
-                        border: none;
-                    }
-                    
-                    .subcategories__button:hover {
-                        text-decoration: underline;
-                        cursor: pointer;
-                    }
-                    
-                    .products__inner {
-                        display: grid;
-                        grid-template-columns: repeat(4, 1fr);
-                        margin-bottom: 120px;
-                    }
-                    
-                    .products__types {
-                        display: none;
-                    }
-                    
-                    .products__item {
-                        border: 1px solid #C1C1C1;
-                        min-height: 400px;
-                        padding-bottom: 15px;
-                    }
-                    
-                    .item__check {
-                        margin-left: 15px;
-                        padding-top: 20px;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        gap: 10px;
-                    }
-                    
-                    .item__fav {
-                        left: 212px;
-                    }
-                    
-                    .product__img {
-                        object-position: center;
-                        width: 200;
-                        max-height: 160;
-                    }
-                    
-                    .check--dot {
-                        width: 14px;
-                        height: 14px;
-                        border: none;
-                        border-radius: 50%;
-                        display: inline-block;
-                        margin-right: 10px;
-                    }
-                    
-                    .check {
-                        line-height: 22px;
-                    }
-                    
-                    .check--dot-yes {
-                        background-color: #B2E08D;
-                    }
-                    
-                    .check--dot-no {
-                        background-color: #FF867C;
-                    }
-                    
-                    .item__todo {
-                        display: flex;
-                        justify-content: center;
-                        gap: 0 15px;
-                        margin-right: 15px;
-                    }
-                    
-                    .todo__btn {
-                        border: none;
-                        background: transparent;
-                        cursor: pointer;
-                    }
-                    
-                    .more {
-                        display: none;
-                    }
-                    
-                    .item {
-                        flex-direction: column;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                    
-                    .item__title {
-                        text-align: center;
-                        font-family: 'Playfair Display';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 24px;
-                        margin-bottom: 8px;
-                    }
-                    
-                    .products__item-for-adap {
-                        display: none;
-                    }
-                    
-                    .item__categories {
-                        display: block;
-                        font-family: 'Playfair Display';
-                        font-style: italic;
-                        font-weight: 400;
-                        font-size: 14px;
-                        line-height: 22px;
-                        text-align: center;
-                        margin-bottom: 13px;
-                    }
-                    
-                    .item__prise {
-                        font-family: 'Anglecia Pro Display';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 20px;
-                        line-height: 40px;
-                    }
-                    
-                    .item__for {
-                        gap: 0 20px;
-                        margin-bottom: 10px;
-                    }
-                    
-                    .item__categories--none {
-                        visibility: hidden;
-                    }
-                    
-                    .item__weight {
-                        font-weight: 400;
-                        font-size: 14px;
-                        color: rgba(24, 66, 64, 0.4);
-                    }
-                    
-                    .product__img--kamamber {
-                        margin-bottom: 10px;
-                        margin-top: 20px;
-                    }
-                    
-                    .discount__inner {
-                        background-image: url(../pic/cheeeeese.jpg);
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        height: 560px;
-                        width: 100%;
-                        margin-bottom: 83px;
-                    }
-                    
-                    .discount__info {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        max-width: 461px;
-                        height: 100%;
-                        background: rgba(24, 66, 64, 0.9);
-                        color: #FAEEE2;
-                    }
-                    
-                    .discount__sales {
-                        font-family: 'Playfair Display';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 24px;
-                        line-height: 22px;
-                        margin-bottom: 100px;
-                    }
-                    
-                    .discount__num {
-                        font-family: 'Anglecia Pro Display';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 144px;
-                        line-height: 40px;
-                        margin-bottom: 75px;
-                    }
-                    
-                    .discount__text {
-                        font-family: 'Playfair Display';
-                        font-style: italic;
-                        font-weight: 400;
-                        font-size: 24px;
-                        line-height: 22px;
-                        margin-bottom: 35px;
-                    }
-                    
-                    .discount__item {
-                        font-style: normal;
-                        text-decoration-line: underline;
-                        text-decoration-thickness: 1px;
-                        cursor: pointer;
-                    }
-                    
-                    .discount__time {
-                        margin-bottom: 46px;
-                    }
-                    
-                    .discount__btn {
-                        width: 286px;
-                        height: 64px;
-                        font-size: 18px;
-                        line-height: 22px;
-                        border: 1px solid #FFE7CF;
-                        border-radius: 36px;
-                        background: transparent;
-                        text-transform: uppercase;
-                        color: #FFE7CF;
-                        margin-bottom: 59px;
-                    }
-                    
-                    .slider__link {
-                        text-transform: uppercase;
-                        font-weight: 500;
-                        font-size: 14px;
-                        line-height: 16px;
-                        cursor: pointer;
-                        text-decoration-line: underline;
-                        text-decoration-thickness: 1px;
-                        letter-spacing: 0.02em;
-                    }
-                    
-                    .recipe {
-                        margin-bottom: 117px;
-                    }
-                    
-                    .recipe__slider {
-                        display: flex;
-                        justify-content: space-between;
-                        gap: 20px;
-                    }
-                    
-                    .recipe__title {
-                        font-family: 'Playfair Display';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 36px;
-                        line-height: 110.69%;
-                    }
-                    
-                    .recipe__text {
-                        color: rgba(141, 154, 154, 1);
-                        font-style: normal;
-                        width: 300px;
-                        margin-bottom: 20px;
-                    }
-                    
-                    .recipe__link {
-                        display: block;
-                        font-weight: 500;
-                        font-size: 14px;
-                        line-height: 16px;
-                        letter-spacing: 0.02em;
-                        text-decoration-line: underline;
-                        text-transform: uppercase;
-                    }
-                    
-                    .recipe__text-one {
-                        margin-bottom: 20px;
-                    }
-                    
-                    .recipe__text-two {
-                        margin-bottom: 85px;
-                    }
-                    
-                    .recipe__text-three {
-                        margin-bottom: 40px;
-                    }
-                    
-                    .recipe__info {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    
-                    .recipe__pag-n-arr {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin-bottom: 26px;
-                    }
-                    
-                    .recipe__pag {
-                        margin-right: 70px;
-                        font-family: 'Anglecia Pro Display';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 24px;
-                        line-height: 40px;
-                        flex-wrap: nowrap;
-                    }
-                    
-                    .recipe__arrows {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        gap: 0 12px;
-                        margin-right: 35px;
-                    }
-                    
-                    .recipe__button-left,
-                    .recipe__button-right {
-                        border: none;
-                        width: 60px;
-                        height: 60px;
-                        border-radius: 50%;
-                    }
-                    
-                    .recipe__mySlider {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        gap: 20px;
-                    }
-                    
-                    .recipe__item {
-                        width: 420px;
-                        max-height: 550px;
-                        padding-bottom: 50px;
-                    }
-                    
-                    .recipe__item-tree {
-                        width: 304px;
-                    }
-                    
-                    .recipe__text {
-                        display: block;
-                        width: 80%;
-                    }
-                    
-                    .social__link {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-direction: column;
-                        border-bottom: 1px solid rgba(24, 66, 64, 0.3);
-                    }
-                    
-                    .insta {
-                        font-family: 'Playfair Display';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 36px;
-                        line-height: 40px;
-                        text-transform: uppercase;
-                        letter-spacing: 0.02em;
-                        color: #184240;
-                        margin-bottom: 30px;
-                    }
-                    
-                    .social {
-                        border-top: 1px solid rgba(24, 66, 64, 0.3);
-                        padding-top: 117px;
-                    }
-                    
-                    .soc__link {
-                        letter-spacing: 0.02em;
-                        text-decoration-line: underline;
-                        text-transform: uppercase;
-                        font-weight: 500;
-                        font-size: 14px;
-                        line-height: 16px;
-                        color: #184240;
-                        margin-bottom: 120px;
-                    }
-                    
-                    .instagram__photo {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-wrap: wrap;
-                        gap: 9px;
-                        margin-top: 35px;
-                        padding-bottom: 31px;
-                        border-bottom: 1px solid rgba(24, 66, 64, 0.3);
-                    }
-                    
-                    .decor {
-                        position: absolute;
-                        bottom: 148px;
-                        left: 0px;
-                    }
-                    
-                    .footer {
-                        margin-top: 191px;
-                        background-color: #184240;
-                        color: rgba(250, 238, 226, 1);
-                    }
-                    
-                    .foooter__top {
-                        padding-top: 105px;
-                        padding-bottom: 100px;
-                        border-bottom: 1px solid #FAEEE2;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                    }
-                    
-                    .footer__link {
-                        display: block;
-                        font-family: 'Playfair Display';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 36px;
-                        margin-left: 70px;
-                    }
-                    
-                    .footer__link--inst {
-                        margin-bottom: 50px;
-                    }
-                    
-                    .contacts__phone {
-                        display: block;
-                        text-align: center;
-                        font-family: 'Anglecia Pro Display';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 36px;
-                        line-height: 40px;
-                        margin-bottom: 30px;
-                    }
-                    
-                    .contacts__adress {
-                        width: 460px;
-                        display: inline-block;
-                        text-align: center;
-                    }
-                    
-                    .email {
-                        display: flex;
-                        justify-content: center;
-                        align-items: flex-end;
-                        flex-direction: column;
-                        margin-right: 70px;
-                    }
-                    
-                    .mail {
-                        font-family: 'Playfair Display';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 36px;
-                        padding-bottom: 50px;
-                    }
-                    
-                    .email__text {
-                        text-decoration-line: underline;
-                        text-transform: uppercase;
-                    }
-                    
-                    .footer__bottom {
-                        margin-top: 36px;
-                        padding-bottom: 100px;
-                        display: flex;
-                        justify-content: space-between;
-                    }
-                    
-                    .footer__logo {
-                        margin-left: 70px;
-                    }
-                    
-                    .footer__text {
-                        display: block;
-                        width: 245px;
-                        text-align: center;
-                        margin-left: 70px;
-                    }
-                    
-                    .footer__top-adaptive {
-                        display: none;
-                    }
-                    
-                    @media screen and (max-width:1300px) {
-                        .promo__button,
-                        .promo__img {
-                            display: none;
-                        }
-                        .decor {
-                            display: none;
-                        }
-                    }
-                    
-                    @media screen and (max-width: 1200px) {
-                        .header {
-                            background-image: url(/pic/header__bg.jpg);
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                            background-position: center;
-                            color: #fff;
-                            height: 900px;
-                        }
-                        .promo__btn-delivery {
-                            margin-top: 40px;
-                        }
-                        .header__title,
-                        .header__title-italic {
-                            font-size: 64px;
-                        }
-                        .header__social--fav,
-                        .promo__button {
-                            display: none;
-                        }
-                        .header__promo {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                        }
-                        .new {
-                            margin-bottom: 181px;
-                            position: relative;
-                        }
-                        .new__slider-pagin-n-arr {
-                            position: absolute;
-                            width: 100%;
-                            top: 810px;
-                        }
-                        .categories__buttons {
-                            margin-top: 50px;
-                        }
-                        .products__title {
-                            display: none;
-                        }
-                        .products__types {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            gap: 0 50px;
-                            border-bottom: 1px solid rgba(24, 66, 64, 0.3);
-                        }
-                        .product__type {
-                            font-family: 'Playfair Display';
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 36px;
-                            line-height: 40px;
-                            color: #184240;
-                            letter-spacing: 0.02em;
-                            text-transform: uppercase;
-                            border: none;
-                            background: transparent;
-                        }
-                        .products__item-for-adap {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-                        }
-                        .more {
-                            display: inline-block;
-                            color: #184240;
-                            text-decoration: underline;
-                            border: none;
-                            background: transparent;
-                            text-transform: uppercase;
-                            text-align: center;
-                            width: 100%;
-                            margin-bottom: 80px;
-                            cursor: pointer;
-                        }
-                        .promo__btn-delivery,
-                        .promo__in-shop,
-                        .promo__shops {
-                            display: flex;
-                            flex-direction: column;
-                        }
-                        .promo__btn-delivery {
-                            margin-top: 50px;
-                            background-color: transparent;
-                            border: 0.847328px solid #FFF3E7;
-                            border-radius: 70px;
-                            line-height: 17px;
-                            font-weight: 400;
-                            font-size: 14px;
-                            width: 400px;
-                            height: 43px;
-                            color: #FFF3E7;
-                            letter-spacing: -0.01em;
-                            padding-top: 13px;
-                            padding-left: 50px;
-                            margin-bottom: 77px;
-                        }
-                        .promo__in-shop {
-                            font-family: DIN Pro;
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 14px;
-                            line-height: 20px;
-                            margin-bottom: 47px;
-                        }
-                        .promo__shops {
-                            display: flex;
-                            flex-direction: row;
-                            gap: 0 60px;
-                        }
-                        .promo__inst {
-                            display: block;
-                            position: absolute;
-                            right: 70px;
-                            top: 530px;
-                        }
-                        .header__promo {
-                            position: relative;
-                        }
-                        .header__title {
-                            font-size: 64px;
-                            line-height: 70px;
-                        }
-                        .swiper-wrapper {
-                            width: 100%;
-                        }
-                        .categories__subcategories {
-                            display: none;
-                        }
-                        .categories__buttons {
-                            font-size: 14px;
-                            display: inline-block;
-                            text-align: center;
-                        }
-                        .product__button--last {
-                            margin-top: 26px;
-                        }
-                        .products__inner {
-                            grid-template-columns: repeat(3, 1fr);
-                        }
-                        .categories__buttons {
-                            margin-left: 100px;
-                        }
-                        .recipe {
-                            position: relative;
-                        }
-                        .recipe__pag-n-arr {
-                            position: absolute;
-                            display: flex;
-                            justify-content: space-between;
-                            width: 100%;
-                            top: 770px;
-                        }
-                        .foooter__top {
-                            display: none;
-                        }
-                        .footer__top-adaptive {
-                            display: block;
-                            margin-top: 100px;
-                        }
-                        .top-adaptive__inner {
-                            display: flex;
-                            justify-content: space-between;
-                        }
-                        .top-adaptive__menu,
-                        .top-adaptive__links {
-                            display: grid;
-                            grid-template-columns: repeat(2, 1fr);
-                        }
-                        .top-adaptive__menu {
-                            font-family: 'Playfair Display';
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 36px;
-                            line-height: 110.69%;
-                            gap: 40px 115px;
-                            padding-top: 89px;
-                        }
-                        .top-adaptive__links {
-                            font-family: 'Playfair Display';
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 24px;
-                            line-height: 30px;
-                            gap: 41px 105px;
-                            padding-top: 105px;
-                        }
-                        .top-apadtive__link--social {
-                            text-decoration: underline;
-                            text-decoration-thickness: 1px;
-                        }
-                        .contacts {
-                            display: flex;
-                            flex-direction: column;
-                            margin-top: 50px;
-                            text-decoration: underline;
-                            line-height: 2;
-                            padding-bottom: 45px;
-                            border-bottom: 1px solid rgba(250, 238, 226, 0.2);
-                        }
-                        .footer__bottom {
-                            justify-content: center;
-                            align-items: center;
-                            flex-direction: column;
-                        }
-                        .footer__logo {
-                            margin-bottom: 15px;
-                            margin-left: 0;
-                        }
-                        .footer__text {
-                            margin: 0;
-                            font-family: 'DIN Pro';
-                            font-style: normal;
-                            font-weight: 400;
-                            font-size: 14px;
-                            line-height: 22px;
-                        }
-                    }
-                    
-                    @media screen and (max-width: 880px) {
-                        .header__nav-link {
-                            font-size: 12px;
-                            line-height: 14px;
-                        }
-                        .products__inner {
-                            grid-template-columns: repeat(2, 1fr);
-                        }
-                        .categories__buttons {
-                            margin-left: 50px;
-                        }
-                        .discount__info {
-                            min-width: 100%;
-                        }
-                        .discount__inner {
-                            background-image: url(/pic/bgg.jpg);
-                            background-position: center;
-                            background-repeat: no-repeat;
-                            background-size: cover;
-                        }
-                        .recipe__item {
-                            width: 100%;
-                        }
-                        .recipe__text {
-                            width: 70%;
-                            max-width: 345px;
-                        }
-                        .slider__link {
-                            display: none;
-                        }
-                        .recipe__arrows {
-                            width: 100%;
-                        }
-                        .photo__img-four {
-                            display: none;
-                        }
-                        .top-adaptive__links {
-                            grid-template-columns: repeat(1, 1fr);
-                        }
-                        .item__for-adap {
-                            display: none;
-                        }
-                    }
-                    
-                    @media screen and (max-width: 375px) {
-                        .header__inner {
-                            border-bottom: 1px solid rgba(255, 243, 231, 0.3);
-                            margin-left: 20px;
-                            width: 335px;
-                            padding: 20px 0;
-                        }
-                        .menu__mobile-one {
-                            display: flex;
-                            flex-direction: column;
-                            width: 40px;
-                            height: 40px;
-                            border-radius: 50%;
-                            justify-content: space-around;
-                            background-color: rgba(255, 255, 255, 0.22);
-                            border: none;
-                            padding: 15px;
-                            cursor: pointer;
-                        }
-                        .header__menu-mob span {
-                            width: 13px;
-                            height: 1px;
-                            background-color: #fff;
-                        }
-                        .header__nav {
-                            display: none;
-                        }
-                        .menu__mobile-info.menu--open {
-                            display: flex;
-                            flex-direction: column;
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-                            right: 0;
-                            bottom: 0;
-                            background-color: rgba(24, 66, 64, 1);
-                            align-items: center;
-                            z-index: 5;
-                        }
-                        .header__social-mob {
-                            display: flex;
-                        }
-                        .header__menu-mob,
-                        .header__nav-img,
-                        .header__social-mob {
-                            z-index: 10;
-                        }
-                        .header__promo {
-                            display: none;
-                        }
-                        .promo__button {
-                            display: block;
-                        }
-                    }
+                                    @font-face {
+                                        font-family: Anglecia Pro Display;
+                                        src: url(./fonts/angleciadisplay/AngleciaProDisplay-Regular.otf) format(otf), url(./fonts/angleciadisplay/AngleciaProDisplay-Italic.otf) format(otf);
+                                    }
+                                    
+                                    @font-face {
+                                        font-family: DIN Pro;
+                                        src: url(/fonts/DINPro/dinpro_medium.otf) format(otf), url(/fonts/DINPro/dinpro.otf) format(otf);
+                                    }
+                                    
+                                    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Roboto:wght@400;500&display=swap');
+                                    *,
+                                    *::after,
+                                    *::before {
+                                        box-sizing: border-box;
+                                    }
+                                    
+                                    button {
+                                        cursor: pointer;
+                                    }
+                                    
+                                    body {
+                                        font-family: 'Roboto', sans-serif;
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        margin: 0 auto;
+                                        line-height: 22px;
+                                        background-color: #E5E5E5;
+                                    }
+                                    
+                                    .container {
+                                        max-width: 1440px;
+                                        margin: 0 auto;
+                                        padding: 0 35px;
+                                    }
+                                    
+                                    a {
+                                        text-decoration: none;
+                                        color: inherit;
+                                    }
+                                    
+                                    li {
+                                        list-style: none;
+                                    }
+                                    
+                                    .header {
+                                        background-image: url(/pic/header__bg.jpg);
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        background-position: center;
+                                        color: #fff;
+                                        height: 100vh;
+                                        margin-bottom: 120px;
+                                    }
+                                    
+                                    .header__inner {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        padding: 30px 20px;
+                                        border-bottom: 1px solid rgba(255, 243, 231, 0.3);
+                                    }
+                                    
+                                    .header__nav {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        gap: 0 30px;
+                                        align-items: center;
+                                        text-transform: uppercase;
+                                        padding-top: 22px;
+                                    }
+                                    
+                                    .header__social-mob {
+                                        display: none;
+                                    }
+                                    
+                                    .header__social-link {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        gap: 0 15px;
+                                    }
+                                    
+                                    .header__promo {
+                                        display: flex;
+                                        flex-direction: column;
+                                    }
+                                    
+                                    .header__title {
+                                        text-align: center;
+                                        font-family: 'Playfair Display';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 72px;
+                                        line-height: 1;
+                                        position: relative;
+                                    }
+                                    
+                                    .header__title-italic {
+                                        font-style: italic;
+                                    }
+                                    
+                                    .promo__btn-delivery,
+                                    .promo__in-shop,
+                                    .promo__shops,
+                                    .promo__inst {
+                                        display: none;
+                                    }
+                                    
+                                    .promo__button {
+                                        border: 0.847328px solid #FFF3E7;
+                                        background: transparent;
+                                        border-radius: 70px;
+                                        color: #FFF3E7;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        padding-left: 30px;
+                                        font-size: 18px;
+                                        position: absolute;
+                                        bottom: 65px;
+                                        left: 928px;
+                                    }
+                                    
+                                    .promo__img {
+                                        padding-top: 10px;
+                                        padding-bottom: 10px;
+                                        padding-left: 20px;
+                                    }
+                                    
+                                    .header__promo-mob {
+                                        display: none;
+                                    }
+                                    
+                                    .menu__mobile {
+                                        display: none;
+                                    }
+                                    
+                                    .menu__mobile-info {
+                                        display: none;
+                                    }
+                                    
+                                    .new {
+                                        font-family: Playfair Display;
+                                        margin-bottom: 45px;
+                                    }
+                                    
+                                    .new__pagination {
+                                        font-family: Anglecia Pro Display;
+                                        font-weight: 400;
+                                        font-size: 24px;
+                                        line-height: 24px;
+                                        letter-spacing: -0.01em;
+                                        color: black;
+                                    }
+                                    
+                                    .new__title {
+                                        margin-bottom: 50px;
+                                        font-weight: 400;
+                                        font-size: 36px;
+                                        line-height: 40px;
+                                    }
+                                    
+                                    .new__item {
+                                        position: relative;
+                                        flex-basis: 417px;
+                                    }
+                                    
+                                    .new__item-desc {
+                                        font-style: italic;
+                                    }
+                                    
+                                    .new__ditails {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        gap: 0 10px;
+                                        position: absolute;
+                                        top: 520px;
+                                        left: 15px;
+                                    }
+                                    
+                                    .new__special {
+                                        position: absolute;
+                                        top: 25px;
+                                        left: 295px;
+                                    }
+                                    
+                                    .new__button {
+                                        border: none;
+                                        height: 60px;
+                                        width: 60px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        border-radius: 50%;
+                                    }
+                                    
+                                    .new__inner-info {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                    }
+                                    
+                                    .new__slider-pagin-n-arr {
+                                        display: flex;
+                                        align-items: center;
+                                        flex-basis: 300px;
+                                    }
+                                    
+                                    .new-pagination {
+                                        display: flex;
+                                        flex-basis: 130px;
+                                        gap: 0 10px;
+                                        align-items: center;
+                                        margin-right: 100px;
+                                    }
+                                    
+                                    .pagination__slash {
+                                        color: #AEAEAE;
+                                    }
+                                    
+                                    .pagination__current {
+                                        color: #184240;
+                                    }
+                                    
+                                    .new__arrows {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        gap: 0 10px;
+                                        align-items: center;
+                                        position: relative;
+                                    }
+                                    
+                                    .new__item-title {
+                                        font-weight: 400;
+                                        font-size: 24px;
+                                        margin-bottom: 10px;
+                                    }
+                                    
+                                    .products__title {
+                                        font-family: 'Playfair Display';
+                                        font-weight: 400;
+                                        font-size: 36px;
+                                        text-align: center;
+                                        margin-bottom: 38px;
+                                    }
+                                    
+                                    .categories__buttons {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        gap: 0 10px;
+                                        max-width: 1047px;
+                                        margin-left: 150px;
+                                    }
+                                    
+                                    .product__button,
+                                    .subcategories__button {
+                                        text-transform: uppercase;
+                                        font-family: Roboto;
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        line-height: 40px;
+                                        color: #184240;
+                                    }
+                                    
+                                    .categories__buttons {
+                                        padding-bottom: 15px;
+                                        border-bottom: rgba(24, 66, 64, 0.3) 1px solid;
+                                    }
+                                    
+                                    .product__button {
+                                        padding: 0 20px;
+                                        background: none;
+                                        border: #184240 1px solid;
+                                        border-radius: 15px;
+                                        cursor: pointer;
+                                    }
+                                    
+                                    .header__menu-mob {
+                                        display: none;
+                                    }
+                                    
+                                    .categories__subcategories {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        gap: 15px;
+                                        margin-top: 15px;
+                                    }
+                                    
+                                    .subcategories__button {
+                                        background: none;
+                                        border: none;
+                                    }
+                                    
+                                    .subcategories__button:hover {
+                                        text-decoration: underline;
+                                        cursor: pointer;
+                                    }
+                                    
+                                    .products__inner {
+                                        display: grid;
+                                        grid-template-columns: repeat(4, 1fr);
+                                        margin-bottom: 120px;
+                                    }
+                                    
+                                    .products__types {
+                                        display: none;
+                                    }
+                                    
+                                    .products__item {
+                                        border: 1px solid #C1C1C1;
+                                        min-height: 400px;
+                                        padding-bottom: 15px;
+                                    }
+                                    
+                                    .item__check {
+                                        margin-left: 15px;
+                                        padding-top: 20px;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        gap: 10px;
+                                    }
+                                    
+                                    .item__fav {
+                                        left: 212px;
+                                    }
+                                    
+                                    .product__img {
+                                        object-position: center;
+                                        width: 200;
+                                        max-height: 160;
+                                    }
+                                    
+                                    .check--dot {
+                                        width: 14px;
+                                        height: 14px;
+                                        border: none;
+                                        border-radius: 50%;
+                                        display: inline-block;
+                                        margin-right: 10px;
+                                    }
+                                    
+                                    .check {
+                                        line-height: 22px;
+                                    }
+                                    
+                                    .check--dot-yes {
+                                        background-color: #B2E08D;
+                                    }
+                                    
+                                    .check--dot-no {
+                                        background-color: #FF867C;
+                                    }
+                                    
+                                    .item__todo {
+                                        display: flex;
+                                        justify-content: center;
+                                        gap: 0 15px;
+                                        margin-right: 15px;
+                                    }
+                                    
+                                    .todo__btn {
+                                        border: none;
+                                        background: transparent;
+                                        cursor: pointer;
+                                    }
+                                    
+                                    .more {
+                                        display: none;
+                                    }
+                                    
+                                    .item {
+                                        flex-direction: column;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+                                    
+                                    .item__title {
+                                        text-align: center;
+                                        font-family: 'Playfair Display';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 24px;
+                                        margin-bottom: 8px;
+                                    }
+                                    
+                                    .products__item-for-adap {
+                                        display: none;
+                                    }
+                                    
+                                    .product__type--mobile {
+                                        display: none;
+                                    }
+                                    
+                                    .item__categories {
+                                        display: block;
+                                        font-family: 'Playfair Display';
+                                        font-style: italic;
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        line-height: 22px;
+                                        text-align: center;
+                                        margin-bottom: 13px;
+                                    }
+                                    
+                                    .item__prise {
+                                        font-family: 'Anglecia Pro Display';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 20px;
+                                        line-height: 40px;
+                                    }
+                                    
+                                    .item__for {
+                                        gap: 0 20px;
+                                        margin-bottom: 10px;
+                                    }
+                                    
+                                    .item__categories--none {
+                                        visibility: hidden;
+                                    }
+                                    
+                                    .item__weight {
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        color: rgba(24, 66, 64, 0.4);
+                                    }
+                                    
+                                    .product__img--kamamber {
+                                        margin-bottom: 10px;
+                                        margin-top: 20px;
+                                    }
+                                    
+                                    .discount__inner {
+                                        background-image: url(../pic/cheeeeese.jpg);
+                                        background-repeat: no-repeat;
+                                        background-size: cover;
+                                        height: 560px;
+                                        width: 100%;
+                                        margin-bottom: 83px;
+                                    }
+                                    
+                                    .discount__info {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: center;
+                                        max-width: 461px;
+                                        height: 100%;
+                                        background: rgba(24, 66, 64, 0.9);
+                                        color: #FAEEE2;
+                                    }
+                                    
+                                    .discount__sales {
+                                        font-family: 'Playfair Display';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 24px;
+                                        line-height: 22px;
+                                        margin-bottom: 100px;
+                                    }
+                                    
+                                    .discount__num {
+                                        font-family: 'Anglecia Pro Display';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 144px;
+                                        line-height: 40px;
+                                        margin-bottom: 75px;
+                                    }
+                                    
+                                    .discount__text {
+                                        font-family: 'Playfair Display';
+                                        font-style: italic;
+                                        font-weight: 400;
+                                        font-size: 24px;
+                                        line-height: 22px;
+                                        margin-bottom: 35px;
+                                    }
+                                    
+                                    .discount__item {
+                                        font-style: normal;
+                                        text-decoration-line: underline;
+                                        text-decoration-thickness: 1px;
+                                        cursor: pointer;
+                                    }
+                                    
+                                    .discount__time {
+                                        margin-bottom: 46px;
+                                    }
+                                    
+                                    .discount__btn {
+                                        width: 286px;
+                                        height: 64px;
+                                        font-size: 18px;
+                                        line-height: 22px;
+                                        border: 1px solid #FFE7CF;
+                                        border-radius: 36px;
+                                        background: transparent;
+                                        text-transform: uppercase;
+                                        color: #FFE7CF;
+                                        margin-bottom: 59px;
+                                    }
+                                    
+                                    .slider__link {
+                                        text-transform: uppercase;
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        line-height: 16px;
+                                        cursor: pointer;
+                                        text-decoration-line: underline;
+                                        text-decoration-thickness: 1px;
+                                        letter-spacing: 0.02em;
+                                    }
+                                    
+                                    .recipe {
+                                        margin-bottom: 117px;
+                                    }
+                                    
+                                    .recipe__slider {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        gap: 20px;
+                                    }
+                                    
+                                    .recipe__title {
+                                        font-family: 'Playfair Display';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 36px;
+                                        line-height: 110.69%;
+                                    }
+                                    
+                                    .recipe__text {
+                                        color: rgba(141, 154, 154, 1);
+                                        font-style: normal;
+                                        width: 300px;
+                                        margin-bottom: 20px;
+                                    }
+                                    
+                                    .recipe__link {
+                                        display: block;
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        line-height: 16px;
+                                        letter-spacing: 0.02em;
+                                        text-decoration-line: underline;
+                                        text-transform: uppercase;
+                                    }
+                                    
+                                    .recipe__text-one {
+                                        margin-bottom: 20px;
+                                    }
+                                    
+                                    .recipe__text-two {
+                                        margin-bottom: 85px;
+                                    }
+                                    
+                                    .recipe__text-three {
+                                        margin-bottom: 40px;
+                                    }
+                                    
+                                    .recipe__info {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                    }
+                                    
+                                    .recipe__pag-n-arr {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin-bottom: 26px;
+                                    }
+                                    
+                                    .recipe__pag {
+                                        margin-right: 70px;
+                                        font-family: 'Anglecia Pro Display';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 24px;
+                                        line-height: 40px;
+                                        flex-wrap: nowrap;
+                                    }
+                                    
+                                    .recipe__arrows {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 0 12px;
+                                        margin-right: 35px;
+                                    }
+                                    
+                                    .recipe__button-left,
+                                    .recipe__button-right {
+                                        border: none;
+                                        width: 60px;
+                                        height: 60px;
+                                        border-radius: 50%;
+                                    }
+                                    
+                                    .recipe__mySlider {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        gap: 20px;
+                                    }
+                                    
+                                    .recipe__item {
+                                        width: 420px;
+                                        max-height: 550px;
+                                        padding-bottom: 50px;
+                                    }
+                                    
+                                    .recipe__item-tree {
+                                        width: 304px;
+                                    }
+                                    
+                                    .recipe__text {
+                                        display: block;
+                                        width: 80%;
+                                    }
+                                    
+                                    .social__link {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        flex-direction: column;
+                                        border-bottom: 1px solid rgba(24, 66, 64, 0.3);
+                                    }
+                                    
+                                    .insta {
+                                        font-family: 'Playfair Display';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 36px;
+                                        line-height: 40px;
+                                        text-transform: uppercase;
+                                        letter-spacing: 0.02em;
+                                        color: #184240;
+                                        margin-bottom: 30px;
+                                    }
+                                    
+                                    .social {
+                                        border-top: 1px solid rgba(24, 66, 64, 0.3);
+                                        padding-top: 117px;
+                                    }
+                                    
+                                    .soc__link {
+                                        letter-spacing: 0.02em;
+                                        text-decoration-line: underline;
+                                        text-transform: uppercase;
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        line-height: 16px;
+                                        color: #184240;
+                                        margin-bottom: 120px;
+                                    }
+                                    
+                                    .instagram__photo {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        flex-wrap: wrap;
+                                        gap: 9px;
+                                        margin-top: 35px;
+                                        padding-bottom: 31px;
+                                        border-bottom: 1px solid rgba(24, 66, 64, 0.3);
+                                    }
+                                    
+                                    .decor {
+                                        position: absolute;
+                                        bottom: 148px;
+                                        left: 0px;
+                                    }
+                                    
+                                    .footer {
+                                        margin-top: 191px;
+                                        background-color: #184240;
+                                        color: rgba(250, 238, 226, 1);
+                                    }
+                                    
+                                    .foooter__top {
+                                        padding-top: 105px;
+                                        padding-bottom: 100px;
+                                        border-bottom: 1px solid #FAEEE2;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                    }
+                                    
+                                    .footer__link {
+                                        display: block;
+                                        font-family: 'Playfair Display';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 36px;
+                                        margin-left: 70px;
+                                    }
+                                    
+                                    .footer__link--inst {
+                                        margin-bottom: 50px;
+                                    }
+                                    
+                                    .contacts__phone {
+                                        display: block;
+                                        text-align: center;
+                                        font-family: 'Anglecia Pro Display';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 36px;
+                                        line-height: 40px;
+                                        margin-bottom: 30px;
+                                    }
+                                    
+                                    .contacts__adress {
+                                        width: 460px;
+                                        display: inline-block;
+                                        text-align: center;
+                                    }
+                                    
+                                    .email {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: flex-end;
+                                        flex-direction: column;
+                                        margin-right: 70px;
+                                    }
+                                    
+                                    .mail {
+                                        font-family: 'Playfair Display';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 36px;
+                                        padding-bottom: 50px;
+                                    }
+                                    
+                                    .email__text {
+                                        text-decoration-line: underline;
+                                        text-transform: uppercase;
+                                    }
+                                    
+                                    .footer__bottom {
+                                        margin-top: 36px;
+                                        padding-bottom: 100px;
+                                        display: flex;
+                                        justify-content: space-between;
+                                    }
+                                    
+                                    .footer__logo {
+                                        margin-left: 70px;
+                                    }
+                                    
+                                    .footer__text {
+                                        display: block;
+                                        width: 245px;
+                                        text-align: center;
+                                        margin-left: 70px;
+                                    }
+                                    
+                                    .footer__top-adaptive {
+                                        display: none;
+                                    }
+                                    
+                                    .top-adaptive__inner {
+                                        display: none;
+                                    }
+                                    
+                                    @media screen and (max-width:1300px) {
+                                        .decor {
+                                            display: none;
+                                        }
+                                    }
+                                    
+                                    @media screen and (max-width: 1200px) {
+                                        .header {
+                                            background-image: url(/pic/header__bg.jpg);
+                                            background-repeat: no-repeat;
+                                            background-size: cover;
+                                            background-position: center;
+                                            color: #fff;
+                                            height: 900px;
+                                        }
+                                        .promo__btn-delivery {
+                                            margin-top: 40px;
+                                        }
+                                        .header__title,
+                                        .header__title-italic {
+                                            font-size: 64px;
+                                        }
+                                        .header__social--fav {
+                                            display: none;
+                                        }
+                                        .header__promo {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            position: relative;
+                                        }
+                                        .promo__button {
+                                            display: none;
+                                        }
+                                        .new {
+                                            margin-bottom: 181px;
+                                            position: relative;
+                                        }
+                                        .new__slider-pagin-n-arr {
+                                            position: absolute;
+                                            width: 100%;
+                                            top: 810px;
+                                        }
+                                        .categories__buttons {
+                                            margin-top: 50px;
+                                        }
+                                        .products__title {
+                                            display: none;
+                                        }
+                                        .products__types {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            gap: 0 50px;
+                                            border-bottom: 1px solid rgba(24, 66, 64, 0.3);
+                                        }
+                                        .product__type {
+                                            font-family: 'Playfair Display';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 36px;
+                                            line-height: 40px;
+                                            color: #184240;
+                                            letter-spacing: 0.02em;
+                                            text-transform: uppercase;
+                                            border: none;
+                                            background: transparent;
+                                        }
+                                        .products__item-for-adap {
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: center;
+                                            align-items: center;
+                                        }
+                                        .more {
+                                            display: inline-block;
+                                            color: #184240;
+                                            text-decoration: underline;
+                                            border: none;
+                                            background: transparent;
+                                            text-transform: uppercase;
+                                            text-align: center;
+                                            width: 100%;
+                                            margin-bottom: 80px;
+                                            cursor: pointer;
+                                        }
+                                        .promo__btn-delivery,
+                                        .promo__in-shop,
+                                        .promo__shops {
+                                            display: flex;
+                                            flex-direction: column;
+                                        }
+                                        .promo__btn-delivery {
+                                            margin-top: 50px;
+                                            background-color: transparent;
+                                            border: 0.847328px solid #FFF3E7;
+                                            border-radius: 70px;
+                                            line-height: 17px;
+                                            font-weight: 400;
+                                            font-size: 14px;
+                                            width: 400px;
+                                            height: 43px;
+                                            color: #FFF3E7;
+                                            letter-spacing: -0.01em;
+                                            padding-top: 13px;
+                                            padding-left: 50px;
+                                            margin-bottom: 77px;
+                                        }
+                                        .promo__in-shop {
+                                            font-family: DIN Pro;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 14px;
+                                            line-height: 20px;
+                                            margin-bottom: 47px;
+                                        }
+                                        .promo__shops {
+                                            display: flex;
+                                            flex-direction: row;
+                                            gap: 0 60px;
+                                        }
+                                        .promo__inst {
+                                            display: block;
+                                            position: absolute;
+                                            right: 70px;
+                                            top: 530px;
+                                        }
+                                        .header__title {
+                                            font-size: 64px;
+                                            line-height: 70px;
+                                        }
+                                        .swiper-wrapper {
+                                            width: 100%;
+                                        }
+                                        .categories__subcategories {
+                                            display: none;
+                                        }
+                                        .categories__buttons {
+                                            font-size: 14px;
+                                            display: inline-block;
+                                            text-align: center;
+                                        }
+                                        .product__button--last {
+                                            margin-top: 26px;
+                                        }
+                                        .products__inner {
+                                            grid-template-columns: repeat(3, 1fr);
+                                        }
+                                        .categories__buttons {
+                                            margin-left: 100px;
+                                        }
+                                        .recipe {
+                                            position: relative;
+                                        }
+                                        .recipe__pag-n-arr {
+                                            position: absolute;
+                                            display: flex;
+                                            justify-content: space-between;
+                                            width: 100%;
+                                            top: 770px;
+                                        }
+                                        .foooter__top {
+                                            display: none;
+                                        }
+                                        .footer__top-adaptive {
+                                            display: block;
+                                            margin-top: 100px;
+                                        }
+                                        .top-adaptive__inner {
+                                            display: flex;
+                                            justify-content: space-between;
+                                        }
+                                        .top-adaptive__menu,
+                                        .top-adaptive__links {
+                                            display: grid;
+                                            grid-template-columns: repeat(2, 1fr);
+                                        }
+                                        .top-adaptive__menu {
+                                            font-family: 'Playfair Display';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 36px;
+                                            line-height: 110.69%;
+                                            gap: 40px 115px;
+                                            padding-top: 89px;
+                                        }
+                                        .top-adaptive__links {
+                                            font-family: 'Playfair Display';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 24px;
+                                            line-height: 30px;
+                                            gap: 41px 105px;
+                                            padding-top: 105px;
+                                        }
+                                        .top-apadtive__link--social {
+                                            text-decoration: underline;
+                                            text-decoration-thickness: 1px;
+                                        }
+                                        .contacts {
+                                            display: flex;
+                                            flex-direction: column;
+                                            margin-top: 50px;
+                                            text-decoration: underline;
+                                            line-height: 2;
+                                            padding-bottom: 45px;
+                                            border-bottom: 1px solid rgba(250, 238, 226, 0.2);
+                                        }
+                                        .footer__bottom {
+                                            justify-content: center;
+                                            align-items: center;
+                                            flex-direction: column;
+                                        }
+                                        .footer__logo {
+                                            margin-bottom: 15px;
+                                            margin-left: 0;
+                                        }
+                                        .footer__text {
+                                            margin: 0;
+                                            font-family: 'DIN Pro';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 14px;
+                                            line-height: 22px;
+                                        }
+                                    }
+                                    
+                                    @media screen and (max-width: 880px) {
+                                        .header__nav-link {
+                                            font-size: 12px;
+                                            line-height: 14px;
+                                        }
+                                        .products__inner {
+                                            grid-template-columns: repeat(2, 1fr);
+                                        }
+                                        .categories__buttons {
+                                            margin-left: 50px;
+                                        }
+                                        .discount__info {
+                                            min-width: 100%;
+                                        }
+                                        .discount__inner {
+                                            background-image: url(/pic/bgg.jpg);
+                                            background-position: center;
+                                            background-repeat: no-repeat;
+                                            background-size: cover;
+                                        }
+                                        .recipe__item {
+                                            width: 100%;
+                                        }
+                                        .recipe__text {
+                                            width: 70%;
+                                            max-width: 345px;
+                                        }
+                                        .slider__link {
+                                            display: none;
+                                        }
+                                        .recipe__arrows {
+                                            width: 100%;
+                                        }
+                                        .photo__img-four {
+                                            display: none;
+                                        }
+                                        .top-adaptive__links {
+                                            grid-template-columns: repeat(1, 1fr);
+                                        }
+                                        .item__for-adap {
+                                            display: none;
+                                        }
+                                    }
+                                    
+                                    @media screen and (max-width: 767px) {
+                                        .header {
+                                            height: 100vh;
+                                            padding-bottom: 20vh;
+                                            padding-top: 81px;
+                                        }
+                                        .header__promo {
+                                            display: none;
+                                        }
+                                        .header__promo-mob {
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            justify-content: center;
+                                            align-items: center;
+                                            padding-top: 50px;
+                                            height: 100%;
+                                        }
+                                        .header__menu-mob {
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: center;
+                                            justify-content: center;
+                                            gap: 4px;
+                                            width: 40px;
+                                            height: 40px;
+                                            border-radius: 50%;
+                                            background-color: rgba(255, 255, 255, 0.22);
+                                            border: none;
+                                            cursor: pointer;
+                                        }
+                                        .header__menu-mob span {
+                                            display: block;
+                                            width: 13px;
+                                            height: 1px;
+                                            background-color: #fff;
+                                        }
+                                        .menu__mobile-info {
+                                            display: flex;
+                                            flex-direction: column;
+                                            position: fixed;
+                                            top: 0;
+                                            left: 0;
+                                            right: 0;
+                                            bottom: 0;
+                                            background-color: rgba(24, 66, 64, 1);
+                                            align-items: center;
+                                            z-index: 5;
+                                            height: 100vh;
+                                            transform: translateX(100%);
+                                            transition: all .3s;
+                                        }
+                                        .menu__mobile-info.menu--open {
+                                            transform: translateX(0);
+                                        }
+                                        .header__nav {
+                                            display: none;
+                                        }
+                                        .header__social-mob {
+                                            display: flex;
+                                        }
+                                        .header__inner {
+                                            position: fixed;
+                                            top: 0;
+                                            left: 0;
+                                            right: 0;
+                                            display: flex;
+                                            justify-content: space-around;
+                                            align-items: center;
+                                            padding: 20px 0;
+                                            width: 100%;
+                                            background-color: rgba(0, 0, 0, 0.3);
+                                            border-bottom: none;
+                                        }
+                                        .header__inner::after {
+                                            content: "";
+                                            position: absolute;
+                                            bottom: 0;
+                                            width: 80%;
+                                            height: 1px;
+                                            left: 50%;
+                                            transform: translateX(-50%);
+                                            background-color: #FFF3E7;
+                                            z-index: 5;
+                                        }
+                                        .promo__button-mob {
+                                            position: static;
+                                            height: 64px;
+                                            padding: 0 10px 0 30px;
+                                        }
+                                        .promo__instagram,
+                                        .promo__shops {
+                                            display: none;
+                                        }
+                                        .promo__in-shop {
+                                            font-size: 16px;
+                                        }
+                                        .menu__mobile {
+                                            display: grid;
+                                            grid-template-columns: 50% 50%;
+                                            margin-top: 100px;
+                                        }
+                                        .header__menu-mob,
+                                        .header__nav-img,
+                                        .header__social-mob {
+                                            z-index: 10;
+                                        }
+                                        .menu__mobile-one {
+                                            font-family: 'Playfair Display';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 24px;
+                                            line-height: 40px;
+                                            gap: 15px;
+                                            padding: 0;
+                                            padding-left: 20px;
+                                        }
+                                        .menu__mobile-two {
+                                            font-family: 'Playfair Display';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 14px;
+                                            line-height: 30px;
+                                            letter-spacing: 0.02em;
+                                            color: #FFF3E7;
+                                            padding: 0;
+                                            padding-top: 20px;
+                                        }
+                                        .menu__mobile-links {
+                                            width: 100%;
+                                            padding: 21px;
+                                            margin-top: 100px;
+                                            margin-right: 231px;
+                                            width: 200px;
+                                            max-width: 335px;
+                                        }
+                                        .header__nav-item {
+                                            width: fit-content;
+                                            margin: 0;
+                                        }
+                                        .header__menu-mob,
+                                        .header__nav-img,
+                                        .header__social-mob {
+                                            z-index: 10;
+                                        }
+                                        .header {
+                                            background-image: url(/pic/header_bg.jpg);
+                                            background-position: right;
+                                            background-repeat: no-repeat;
+                                            background-size: cover;
+                                        }
+                                        .promo__slogan {
+                                            color: #FAEEE2;
+                                            letter-spacing: 0.055em;
+                                            text-transform: uppercase;
+                                            align-items: start;
+                                            font-size: 14px;
+                                            line-height: 18px;
+                                        }
+                                        .title__mobile {
+                                            font-family: 'Playfair Display';
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            font-size: 36px;
+                                            line-height: 42px;
+                                            color: #FFF3E7;
+                                            max-width: 440px;
+                                            text-align: center;
+                                            margin-top: 63px;
+                                            margin-bottom: 85px;
+                                        }
+                                        .menu__mobile-links {
+                                            position: relative;
+                                        }
+                                        .new__arrows {
+                                            margin-right: 50px;
+                                        }
+                                        .products__inner {
+                                            grid-template-columns: 1fr;
+                                        }
+                                        .item__mob {
+                                            display: none;
+                                        }
+                                        .products__types {
+                                            display: none;
+                                        }
+                                        .product__type--mobile {
+                                            display: inline-block;
+                                            height: 40px;
+                                            width: 340px;
+                                            margin: auto;
+                                            margin-bottom: 17px;
+                                        }
+                                        .categories__buttons {
+                                            margin: 0;
+                                            display: flex;
+                                            justify-content: flex-start;
+                                            align-items: left;
+                                            flex-wrap: wrap;
+                                        }
+                                        .product__button {
+                                            border: none;
+                                            padding: 0 10px;
+                                        }
+                                        .product__button--last {
+                                            margin: 0;
+                                        }
+                                        .recipe__pag-n-arr {
+                                            display: flex;
+                                            width: 100%;
+                                        }
+                                        .recipe__pag {
+                                            width: 50%
+                                        }
+                                        .recipe__arrows {
+                                            width: 50%;
+                                            margin: 0;
+                                        }
+                                    }

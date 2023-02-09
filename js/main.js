@@ -54,6 +54,13 @@ slider.slick({
     spaceBetween: 20,
     prevArrow: '.recipe__button-left',
     nextArrow: '.recipe__button-right',
+    breakpoints: {
+        767: {
+            slidesToShow: 1,
+            slidesToScroll: 2,
+        }
+
+    }
 });
 
 slider.on('afterChange', function(event, slick) {

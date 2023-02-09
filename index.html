@@ -70,10 +70,10 @@
                     </ul>
                     <ul class="menu__mobile-two">
                         <li class="header__nav-item">
-                            <a href="#" class="header__nax-link">точки продаж</a>
+                            <a href="#" class="header__nax-link">Точки продаж</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="#" class="header__nax-link">контакты</a>
+                            <a href="#" class="header__nax-link">Контакты</a>
                         </li>
                         <li class="header__nav-item">
                             <a href="#" class="header__nax-link">Instagram</a>
@@ -82,14 +82,15 @@
                             <a href="#" class="header__nax-link">Facebook</a>
                         </li>
                     </ul>
+                    <div class="menu__mobile-links">
+                        <a href="tel:+88002505824">8 (800) 250-58-24</a>
+                        <a href="mailto:sales@koico.ru">sales@koico.ru</a>
+                    </div>
                 </nav>
+
             </div>
         </div>
         <div class="header__promo">
-            <span class="promo__slogan">изысканность и свежесть</span>
-            <h1 class="title__mobile">
-                Премиальные молочные продукты и сыры с благородной плесенью ручной работы
-            </h1>
             <h1 class="header__title">
                 Магазин натуральных
                 <br>
@@ -104,12 +105,20 @@
                 <img src="./pic/ur.svg" alt="Изображение логотипа Усачевсеого рынка" class="promo__shop-img">
                 <img src="./pic/vv.svg" alt="Изображение логотипа ВкусВилла" class="promo__shop-img">
             </div>
-
             <a class="promo__button" type="button">Наш телеграм канал
                 <img class="promo__img" src="./pic/tg.png" alt="Логотип телеграма">
             </a>
             <a href="#" class="promo__inst">
                 <img src="./pic/instagram.svg" alt="" class="promo__instagram">
+            </a>
+        </div>
+        <div class="header__promo-mob">
+            <span class="promo__slogan">изысканность и свежесть</span>
+            <h1 class="title__mobile">
+                Премиальные молочные продукты и сыры с благородной плесенью ручной работы
+            </h1>
+            <a class="promo__button promo__button-mob" type="button">Наш телеграм канал
+                <img class="promo__img" src="./pic/tg.png" alt="Логотип телеграма">
             </a>
         </div>
     </header>
@@ -211,14 +220,19 @@
                     <button class="product__type" type="button">молоко</button>
                     <button class="product__type" type="button">десерты</button>
                 </div>
+                <select name="Выбор типа продукции" id="" class="product__type--mobile">
+                    <option value="Молоко">Молоко</option>
+                    <option value="Сыры">Сыры</option>
+                    <option value="Десерты">Десерты</option>
+                </select>
                 <div class="products__categories">
                     <div class="categories__buttons">
                         <button class="product__button" type="button">всё</button>
                         <button class="product__button" type="button">свежие</button>
                         <button class="product__button" type="button">мягкие</button>
                         <button class="product__button" type="button">твердые</button>
+                        <button class="product__button" type="button"> коровий </button>
                         <button class="product__button" type="button">с белой плесенью</button>
-                        <button class="product__button" type="button">коровий</button>
                         <button class="product__button product__button--last" type="button">с голубой плесенью</button>
                         <button class="product__button product__button--last" type="button">козий</button>
                     </div>
@@ -329,7 +343,7 @@
                             <span class="item__prise">650 руб.</span>
                         </div>
                     </a>
-                    <a href="#" class="products__item">
+                    <a href="#" class="products__item item__mob">
                         <div class="item__dot-and-info">
                             <div class="item__check">
                                 <div class="item__dot-and-info">
@@ -355,7 +369,7 @@
                             <span class="item__prise">500 руб.</span>
                         </div>
                     </a>
-                    <a href="#" class="products__item">
+                    <a href="#" class="products__item item__mob">
                         <div class="item__dot-and-info">
                             <div class="item__check">
                                 <div class="item__dot-and-info">
@@ -381,7 +395,7 @@
                             <span class="item__prise">500 руб.</span>
                         </div>
                     </a>
-                    <a href="#" class="products__item  item__for-adap">
+                    <a href="#" class="products__item  item__for-adap item__mob">
                         <div class="item__dot-and-info">
                             <div class="item__check">
                                 <div class="item__dot-and-info">
@@ -408,7 +422,7 @@
                             <span class="item__prise">500 руб.</span>
                         </div>
                     </a>
-                    <a href="#" class="products__item  item__fo-adap">
+                    <a href="#" class="products__item  item__fo-adap item__mob">
                         <div class="item__dot-and-info">
                             <div class="item__check">
                                 <div class="item__dot-and-info">
@@ -435,7 +449,7 @@
                             <span class="item__prise">500 руб.</span>
                         </div>
                     </a>
-                    <a href="#" class="products__item  item__fo-adap">
+                    <a href="#" class="products__item  item__fo-adap item__mob">
                         <div class="item__dot-and-info">
                             <div class="item__check">
                                 <div class="item__dot-and-info">
@@ -575,7 +589,7 @@
             </div>
 
         </section>
-        <section class="social">
+        <!-- <section class="social">
             <div class="social__link">
                 <span class="insta">InStagram</span>
                 <a href="#" class="soc__link">Подписаться на нас</a>
@@ -587,7 +601,7 @@
                 <img src="./pic/intag4.svg" alt="Пост истаграма компании" class="photo__img photo__img-four">
 
             </div>
-        </section>
+        </section> -->
     </main>
     <footer class="footer">
         <div class="foooter__top">
