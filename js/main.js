@@ -49,15 +49,15 @@ slider.on('init', function(event, slick, direction) {
 
 slider.slick({
     infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     spaceBetween: 20,
     prevArrow: '.recipe__button-left',
     nextArrow: '.recipe__button-right',
     breakpoints: {
         767: {
-            slidesToShow: 1,
-            slidesToScroll: 2,
+            slidesToShow: 3,
+            slidesToScroll: 3,
         }
 
     }
@@ -76,3 +76,21 @@ const menuMobile = document.querySelector('.menu__mobile-info');
 menuBtn.addEventListener('click', () => {
     menuMobile.classList.toggle('menu--open');
 });
+
+const selectWrapper = () => {
+    const $list = $('.products__list');
+    const $input = $('.products__input');
+    console.log($list)
+    $list.on('click', (event) => {
+        console.log(event.target);
+        $input.value = event.target.textContent;
+        $('.products__mobile').toggleClass('open');
+        $list.find('button').removeClass('active')
+        $(event.target).addClass('active');
+    })
+
+}
+
+$(document).ready(() => {
+    selectWrapper();
+})

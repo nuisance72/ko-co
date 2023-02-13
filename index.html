@@ -220,11 +220,21 @@
                     <button class="product__type" type="button">молоко</button>
                     <button class="product__type" type="button">десерты</button>
                 </div>
-                <select name="Выбор типа продукции" id="" class="product__type--mobile">
-                    <option value="Молоко">Молоко</option>
-                    <option value="Сыры">Сыры</option>
-                    <option value="Десерты">Десерты</option>
-                </select>
+                <div class="products__mobile">
+                    <input class="products__input" type="hidden" name="">
+                    <div class="products__list">
+                        <button class="products__listButton">Молоко</button>
+                        <button class="products__listButton">Сыры</button>
+                        <button class="products__listButton">Десерты</button>
+                        <button class="products__listButton">Закуски</button>
+                        <button class="products__listButton">Пиво</button>
+                    </div>
+                    <span class="products__arrow">
+                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 0.949219C2.69706 2.64628 5.00694 4.95616 5.94975 5.89897L10.8995 0.949219" stroke="#AEAEAE"/>
+                        </svg>                            
+                    </span>
+                </div>
                 <div class="products__categories">
                     <div class="categories__buttons">
                         <button class="product__button" type="button">всё</button>
@@ -589,7 +599,7 @@
             </div>
 
         </section>
-        <!-- <section class="social">
+        <section class="social">
             <div class="social__link">
                 <span class="insta">InStagram</span>
                 <a href="#" class="soc__link">Подписаться на нас</a>
@@ -601,7 +611,7 @@
                 <img src="./pic/intag4.svg" alt="Пост истаграма компании" class="photo__img photo__img-four">
 
             </div>
-        </section> -->
+        </section>
     </main>
     <footer class="footer">
         <div class="foooter__top">
