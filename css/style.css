@@ -47,7 +47,7 @@
  }
  
  .header {
-     background-image: url(/pic/header__bg.jpg);
+     background-image: url('../pic/header__bg.jpg');
      background-repeat: no-repeat;
      background-size: cover;
      background-position: center;
@@ -783,7 +783,7 @@
  
  @media screen and (max-width: 1200px) {
      .header {
-         background-image: url(/pic/header__bg.jpg);
+         background-image: url('../pic/header__bg.jpg');
          background-repeat: no-repeat;
          background-size: cover;
          background-position: center;
