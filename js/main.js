@@ -49,15 +49,15 @@ slider.on('init', function(event, slick, direction) {
 
 slider.slick({
     infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     spaceBetween: 20,
     prevArrow: '.recipe__button-left',
     nextArrow: '.recipe__button-right',
     breakpoints: {
         767: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 1,
+            slidesToScroll: 1,
         }
 
     }
